@@ -1,35 +1,21 @@
+import { pages } from "../data/pages"
 import Header from "./Header"
-import ProdCard from "./ProdCard"
+import Page from "./Page"
+
+
+
 export default function Main () {
     return (
         <>
         <main>
             <Header/>
-            <h1>GAMESHOP</h1>
-            <button>Vistit shop</button>
-            <section className="game-shop">
-                <ProdCard/>
-                <button>Buy</button>
-                <ProdCard/>
-                <button>Buy</button>
-                <ProdCard/>
-                <button>Buy</button>
-            </section>
-            <h1>My GAMES-LIBRARY</h1>
-            <button>Go to libary</button>
-            <section className="my-lib">
-                <ProdCard/>
-                <ProdCard/>
-                <ProdCard/>
-                <ProdCard/>
-            </section>
-            <h1>MY FAVOURITES</h1>
-            <button>Go to favourites</button>
-            <section className="my-fav">
-                <ProdCard/>
-                <ProdCard/>
-            </section>
-        </main>
+            <Page page_name={pages[0].name} show={pages[0].buy} enter={pages[0].visit}/>
+            <Page page_name={pages[1].name} show={pages[1].buy} enter={pages[1].visit}/>
+            <Page page_name={pages[2].name} show={pages[2].buy} enter={pages[2].visit}/>
+        </main>        
         </>
+
     )
+   
+  
 }
