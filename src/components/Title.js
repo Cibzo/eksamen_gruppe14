@@ -1,7 +1,8 @@
-export default function Title () {
+export default function Title ({text, bilde}) {
     return (
         <>
-        <h1>MACs Gamehub</h1>
+        <h1>{text}</h1>
+        <img src={bilde}/>
         </>
     )
 }

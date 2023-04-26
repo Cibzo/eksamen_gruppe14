@@ -1,11 +1,11 @@
-import pic from "./pic.png"
-export default function ProdCard () {
+
+export default function ProdCard ({bilde, title, sjanger}) {
     return (
         <>
             <article>
-            <img src={pic}></img>
-            <h1>Title</h1>
-            <span>Action</span>
+            <img src={bilde}></img>
+            <h1>{title}</h1>
+            <span>{sjanger}</span>
             </article>
         </>
     )
