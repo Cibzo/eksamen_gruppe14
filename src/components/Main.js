@@ -1,70 +1,33 @@
 import Header from "./Header"
-import pic from "./pic.png"
+import ProdCard from "./ProdCard"
 export default function Main () {
     return (
         <>
         <main>
             <Header/>
+            <h1>GAMESHOP</h1>
+            <button>Vistit shop</button>
             <section className="game-shop">
-                <h1>GAMESHOP</h1>
-                <button>Vistit shop</button>
-                <article>
-                    <img src={pic}></img>
-                    <h1>Title</h1>
-                    <span>Action</span>
-                    <button>Buy</button>
-                </article>
-                <article>
-                    <img src={pic}></img>
-                    <h1>Title</h1>
-                    <span>Action</span>
-                    <button>Buy</button>
-                </article>
-                <article>
-                    <img src={pic}></img>
-                    <h1>Title</h1>
-                    <span>Action</span>
-                    <button>Buy</button>
-                </article>
-                <article>
-                    <img src={pic}></img>
-                    <h1>Title</h1>
-                    <span>Action</span>
-                    <button>Buy</button>
-                </article>
+                <ProdCard/>
+                <button>Buy</button>
+                <ProdCard/>
+                <button>Buy</button>
+                <ProdCard/>
+                <button>Buy</button>
             </section>
+            <h1>My GAMES-LIBRARY</h1>
+            <button>Go to libary</button>
             <section className="my-lib">
-                <h1>My GAMES-LIBRARY</h1>
-                <article>
-                    <img src={pic}></img>
-                    <h1>Title</h1>
-                    <span>Action</span>
-                </article>
-                <article>
-                    <img src={pic}></img>
-                    <h1>Title</h1>
-                    <span>Action</span>
-                </article>
-                <article>
-                    <img src={pic}></img>
-                    <h1>Title</h1>
-                    <span>Action</span>
-                </article>
-                <button>Go to libary</button>
+                <ProdCard/>
+                <ProdCard/>
+                <ProdCard/>
+                <ProdCard/>
             </section>
+            <h1>MY FAVOURITES</h1>
+            <button>Go to favourites</button>
             <section className="my-fav">
-                <h1>MY FAVOURITES</h1>
-                <article>
-                    <img src={pic}></img>
-                    <h1>Title</h1>
-                    <span>Action</span>
-                </article>
-                <article>
-                    <img src={pic}></img>
-                    <h1>Title</h1>
-                    <span>Action</span>
-                </article>
-                <button>Go to favourites</button>
+                <ProdCard/>
+                <ProdCard/>
             </section>
         </main>
         </>
