@@ -1,6 +1,6 @@
+import { store } from "../data/games";
 import ProdCard from "./ProdCard";
 import Title from "./Title";
-import pic from "./pic.png"
 
 export default function Page ({page_name, enter, show}) {
     return (
@@ -8,11 +8,9 @@ export default function Page ({page_name, enter, show}) {
         <section>
         <Title text={page_name} />
         <button>{enter}</button>
-        <ProdCard title={"Call of duty"} sjanger={"Action"} bilde={pic} />
-        <button hidden={show}>Buy</button>
+        {(store).map(store => (<ProdCard title={store.title} sjanger={store.genres} bilde={store.img} show_btn={show}/>))}       
         </section>
         </>
 
     )
-
 }
