@@ -7,8 +7,6 @@ import MyFavLib from "./MyFavorite"
 import MyLib from "./MyLibrary"
 
 
-
-
 export default function Main () {
     return (
         <>
