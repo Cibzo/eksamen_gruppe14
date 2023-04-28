@@ -26,4 +26,3 @@ export default function Page ({page_name, enter, show}) {
 
     )
 }
-
