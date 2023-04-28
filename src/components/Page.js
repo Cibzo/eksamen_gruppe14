@@ -2,10 +2,10 @@ import { mygames, store } from "../data/games";
 import ProdCard from "./ProdCard";
 import Title from "./Title";
 
-export default function Page ({page_name, enter, show}) {
-    return (
-        <>
-        <section className={page_name}>
+export default function Page({ page_name, enter, show }) {
+  return (
+    <>
+      <section className={page_name}>
         <Title text={page_name} />
         <button>{enter}</button>
         {(store).map((sellGame) => (page_name === "GAMESHOP") ? 
@@ -26,4 +26,3 @@ export default function Page ({page_name, enter, show}) {
 
     )
 }
-
