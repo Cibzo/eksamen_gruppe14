@@ -3,7 +3,9 @@ import ProdCard from "./ProdCard";
 import Title from "./Title";
 
 
-export default function MyFavLib ({page_name, enter, show}) {
+export default function MyFavLib ({page_name, enter, show, item}) {
+    const randomIndex = Math.floor(Math.random(0) * mygames)
+    console.log(randomIndex)
     return (
         <>
         <section className={page_name}>
@@ -11,7 +13,7 @@ export default function MyFavLib ({page_name, enter, show}) {
             <button>{enter}</button>
             { 
         (mygames.filter(Game => Game.fav === true).map(favGame => 
-        (<ProdCard key={favGame.id} title={favGame.title} sjanger={favGame.genres} bilde={favGame.img} show_btn={show}/>)))}
+        (<ProdCard key={favGame.id} title={favGame.title} sjanger={favGame.genres} bilde={favGame.img} show_btn={show}/>))).slice(0, item)}
         </section>
         </>
 
