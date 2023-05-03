@@ -3,15 +3,15 @@ import ProdCard from "./ProdCard";
 import Title from "./Title";
 
 export default function MyLib ({page_name, enter, show, item}) {
-    const randomIndex = Math.floor(Math.random(0) * mygames)
-    console.log(randomIndex)
+    //const randomIndex = Math.floor(Math.random(0) * mygames)
+    //console.log(randomIndex)
     return (
         <>
         <section className={page_name}>
             <Title text={page_name} />
-            <button>{enter}</button>
+            <Btn id={enter} link={""} name={page_name} />
             {(mygames.map(allGame => 
-            (<ProdCard key={allGame.id} title={allGame.title} sjanger={allGame.genres} bilde={allGame.img} show_btn={show}/>))).slice(0, item)}
+            (<ProdCard key={allGame.id} title={allGame.title} sjanger={allGame.genres} pic={allGame.img} showBtn={show}/>))).slice(0, item)}
         </section>
         </>
 
