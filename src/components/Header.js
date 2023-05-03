@@ -1,13 +1,13 @@
 import Navigation from "./Navigation";
-import Title from "./Title";
 import logo from "../data/logos/1x/macslogo_black.png"
+import Picture from "./Picture";
 
 export default function Header () {
     return (
         <>
         <header>
-            <Title bilde={logo} />
-            <Navigation/>
+        <Picture bilde={logo} />
+        <Navigation/>
         </header>
         </>
     )

@@ -5,7 +5,7 @@ import Title from "./Title";
 export default function Page({ page_name, enter, show }) {
   return (
     <>
-      <section className={page_name}>
+    <section className={page_name}>
         <Title text={page_name} />
         <button>{enter}</button>
         {(store).map((sellGame) => (page_name === "GAMESHOP") ? 
@@ -20,8 +20,18 @@ export default function Page({ page_name, enter, show }) {
         {(page_name === "MY GAMES-LIBRARY" ? 
         (mygames.map(allGame => 
         (<ProdCard key={allGame.id} title={allGame.title} sjanger={allGame.genres} bilde={allGame.img} show_btn={show}/>)))
-        : null)} 
-        </section>
+        : null)}
+
+        {/*store.map(game => (
+                <li key={game.id}>
+                <ProdCard 
+                    title={game.title} 
+                    sjanger={game.genres} 
+                    pic={game.img}
+                />
+                <Btn atr={game.id} link={game.link} name={"Buy"} />
+                </li>*/}
+    </section>
         </>
 
     )
