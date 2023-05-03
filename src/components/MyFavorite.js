@@ -1,22 +1,24 @@
 import { mygames } from "../data/games";
+import Btn from "./Btn";
 import ProdCard from "./ProdCard";
 import Title from "./Title";
 
-
-export default function MyFavLib ({page_name, enter, show, item}) {
-    const randomIndex = Math.floor(Math.random(0) * mygames)
-    console.log(randomIndex)
+export default function MyFavLib ({page_name, enter, show}) {
     return (
         <>
         <section className={page_name}>
             <Title text={page_name} />
-            <button>{enter}</button>
-            { 
-        (mygames.filter(Game => Game.fav === true).map(favGame => 
-        (<ProdCard key={favGame.id} title={favGame.title} sjanger={favGame.genres} bilde={favGame.img} show_btn={show}/>))).slice(0, item)}
+            <Btn id={enter} link={""} name={page_name} />
+            {(mygames.filter(Game => Game.fav === true).map(favGame => 
+            (<ProdCard 
+                key={favGame.id}
+                title={favGame.title}
+                sjanger={favGame.genres}
+                pic={favGame.img}
+                showBtn={show}/>
+                )))}
         </section>
         </>
 
     )
 }
-

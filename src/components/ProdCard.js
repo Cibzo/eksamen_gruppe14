@@ -1,12 +1,14 @@
+import Picture from "./Picture";
+import Title from "./Title";
 
-export default function ProdCard ({bilde, title, sjanger, lenke, show_btn}) {
+export default function ProdCard ({pic, title, sjanger}) {
+    
     return (
         <>
             <article>
-            <img src={bilde} alt=""></img>
-            <h1>{title}</h1>
-            <span>{sjanger.join(", ")}</span>
-            <button hidden={show_btn}><a href={lenke}>Buy</a></button>
+                <Picture bilde={pic}/>
+                <Title text={title}/>
+                <span>{sjanger.join(", ")}</span>
             </article>
         </>
     )

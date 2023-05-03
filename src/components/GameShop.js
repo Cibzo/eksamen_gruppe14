@@ -1,19 +1,37 @@
 import { store } from "../data/games";
+import Btn from "./Btn";
 import ProdCard from "./ProdCard";
 import Title from "./Title";
 
-export default function GameShop ({page_name, enter, show, item}) {
-    const randomIndex = Math.floor(Math.random(0) * store)
-    console.log(randomIndex)
+//console.log("randIndex: " + randIndex + " Lengde på store er: " + store.length)
+
+export default function GameShop ({page_name}) {
+    let randIndex = []
+    while (randIndex.length < store.length) {
+        let index = Math.floor(Math.random()*store.length)
+        if (!randIndex.includes(index)) {
+            randIndex.push(index)
+        }
+    }
     return (
         <>
         <section className={page_name}>
-            <Title text={page_name} />
-            <button>{enter}</button>
-            {store.map(sellGame => 
-            (<ProdCard key={sellGame.id} title={sellGame.title} sjanger={sellGame.genres} bilde={sellGame.img} lenke={sellGame.link} show_btn={show}/>)).slice(0, item)}
+            <Title text={"Gameshop"}/>
+            <Btn name={"Visit Gameshop"}/>
+                {randIndex.map(randIndex => (
+                <ul key={store[randIndex].id}>
+                <ProdCard 
+                    title={store[randIndex].title}
+                    sjanger={store[randIndex].genres}
+                    pic={store[randIndex].img}
+                />
+                <Btn atr={store[randIndex].id} link={store[randIndex].link} name={"Buy"} />
+                </ul>
+                ))}
         </section>
         </>
 
     )
+
+
 }
