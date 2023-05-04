@@ -1,8 +1,7 @@
 import Navigation from "./Navigation";
 import logo from "../data/logos/1x/macslogo_black.png"
 import Picture from "./Picture";
-
-export default function Header () {
+ function Header () {
     return (
         <>
         <header>

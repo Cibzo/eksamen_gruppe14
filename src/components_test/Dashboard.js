@@ -4,7 +4,7 @@ import GameShop from "./GameShop";
 import MyFavLib from "./MyFavorite";
 import MyLib from "./MyLibrary";
 
-export default function Dashboard() {
+ function Dashboard() {
   return (
     <>
         

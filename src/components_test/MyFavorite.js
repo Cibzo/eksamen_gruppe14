@@ -2,8 +2,7 @@ import { mygames } from "../data/games";
 import Btn from "./Btn";
 import ProdCard from "./ProdCard";
 import Title from "./Title";
-
-export default function MyFavLib ({page_name, enter, show}) {
+ function MyFavLib ({page_name, enter, show}) {
     return (
         <>
         <section className={page_name}>

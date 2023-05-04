@@ -2,7 +2,7 @@ import { mygames, store } from "../data/games";
 import ProdCard from "./ProdCard";
 import Title from "./Title";
 
-export default function Page({ page_name, enter, show }) {
+ function Page({ page_name, enter, show }) {
   return (
     <>
     <section className={page_name}>

@@ -2,8 +2,7 @@ import { mygames } from "../data/games";
 import Btn from "./Btn";
 import ProdCard from "./ProdCard";
 import Title from "./Title";
-
-export default function MyLib ({page_name, enter, show, item}) {
+function MyLib ({page_name, enter, show, item}) {
     //const randomIndex = Math.floor(Math.random(0) * mygames)
     //console.log(randomIndex)
     return (

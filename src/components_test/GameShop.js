@@ -5,7 +5,7 @@ import Title from "./Title";
 
 //console.log("randIndex: " + randIndex + " Lengde på store er: " + store.length)
 
-export default function GameShop ({page_name}) {
+ function GameShop ({page_name}) {
     let randIndex = []
     while (randIndex.length < store.length) {
         let index = Math.floor(Math.random()*store.length)
