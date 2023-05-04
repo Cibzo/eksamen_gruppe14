@@ -1,6 +1,5 @@
 //import Page from "./Page"
 import { pages } from "../data/pages";
-
 import GameShop from "./GameShop";
 import MyFavLib from "./MyFavorite";
 import MyLib from "./MyLibrary";
