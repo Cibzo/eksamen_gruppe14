@@ -5,7 +5,12 @@ import shopLogo from "./data/logos/1x/macslogo_black.png"
 
 
 function App() {
-  return <h1>Eksamen minstekrav E, Hamsa Casale</h1>;
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 }
 
 export default App;
