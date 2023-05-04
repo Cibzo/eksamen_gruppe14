@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header logo={shopLogo}/>
-      <PageContent title={"hei"}/>
+      <PageContent title={"Gameshop"}/>
     </>
   );
 }
