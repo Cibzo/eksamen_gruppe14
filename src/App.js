@@ -1,12 +1,14 @@
 import "./App.css";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import PageContent from "./components/PageContent";
+import shopLogo from "./data/logos/1x/macslogo_black.png"
+
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
+      <Header logo={shopLogo}/>
+      <PageContent title={"hei"}/>
     </>
   );
 }

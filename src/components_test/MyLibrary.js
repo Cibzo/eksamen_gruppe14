@@ -1,4 +1,5 @@
 import { mygames } from "../data/games";
+import Btn from "./Btn";
 import ProdCard from "./ProdCard";
 import Title from "./Title";
 

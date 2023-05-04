@@ -1,5 +1,3 @@
-
-export default function Title ({text}) {
-    return <h1>{text}</h1>
+export default function Title({titleName}){
+    return <h2>{titleName}</h2>
 }
-
