@@ -1,14 +1,13 @@
-import Navigation from "./Navigation";
-import logo from "../data/logos/1x/macslogo_black.png"
-import Picture from "./Picture";
+import Image from "./Image"
+import Nav from "./Nav"
 
-export default function Header () {
-    return (
-        <>
-        <header>
-        <Picture bilde={logo} />
-        <Navigation/>
-        </header>
-        </>
-    )
-}
+export default function Header({logo, nav}) {
+    return ( 
+            <>
+            <header>
+            <Image bilde={logo}/>
+            <Nav page_title={nav}/>
+            </header>
+            </>
+        )
+    }

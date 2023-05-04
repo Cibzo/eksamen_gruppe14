@@ -1,3 +1,3 @@
-export default function Btn ({link, name, atr}) {
+export default function Btn ({}) {
     return <button id={atr} ><a href={link}>{name}</a></button>
 }
