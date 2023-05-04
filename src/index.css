@@ -67,7 +67,7 @@ section {
   padding: 10px;
 }
 
-section.GAMESHOP {
+section.Visit.shop {
   width: auto;
   height: auto;
   display: flex;
@@ -79,7 +79,7 @@ section.GAMESHOP {
   margin-bottom: 50px;
 }
 
-section.MY.GAMES-LIBRARY {
+section.Go.to.library {
   width: auto;
   height: auto;
   display: flex;
@@ -90,7 +90,7 @@ section.MY.GAMES-LIBRARY {
   margin-bottom: 50px;
 }
 
-section.MY.FAVOURITES {
+section.Go.to.favourites {
   width: auto;
   height: auto;
   display: flex;
