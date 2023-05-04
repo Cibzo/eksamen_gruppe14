@@ -1,4 +1,4 @@
-export default function Navigation () {
+ function Navigation () {
     return (
         <>
         <nav>

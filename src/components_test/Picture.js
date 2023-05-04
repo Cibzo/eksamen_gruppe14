@@ -1,3 +1,4 @@
-export default function Picture({bilde}) {
+
+function Picture({bilde}) {
     return <img alt={bilde} src={bilde}/>
 }

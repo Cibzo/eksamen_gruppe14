@@ -1,5 +1,6 @@
 
-export default function Title ({text}) {
+
+function Title ({text}) {
     return <h1>{text}</h1>
 }
 
