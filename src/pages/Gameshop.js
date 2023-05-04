@@ -1,7 +1,10 @@
-//import PageContent from "../components/PageContent";
-import PageSection from "../components/PageSection";
-import { store } from "../data/games";
+import PageContent from "../components/PageContent";
+import Header from "./MyFavourites";
 
 export default function GameShop({ props }) {
-  return <PageSection sectionName={"GAMESHOP"} games={store} />;
+  return (
+    <>
+      <h1>Shop</h1>;<Header>hei</Header>
+    </>
+  );
 }

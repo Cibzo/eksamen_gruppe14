@@ -10,7 +10,7 @@ import MyFavourites from "./pages/MyFavourites";
 function App() {
   return (
     <>
-      <Header />
+      <Header/>
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/GameShop" element={<Gameshop />} />
