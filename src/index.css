@@ -52,42 +52,62 @@ button {
 
 /*Spillområde*/
 
-section {
+article {
   width: auto;
+  height: auto;
+  word-wrap: break-word;
+  margin-bottom: 25px;
+}
+
+section {
+  width: 100%;
+  height: aoto;
   text-align: center;
   margin: 20px;
   padding: 10px;
 }
 
 section.GAMESHOP {
-  display: flex;
-  background-color: #5b5858;
   width: auto;
-  margin: 5px;
-  justify-content: center;
-  padding: 10px;
-  font-size: 15px;
+  height: auto;
+  display: flex;
+  background-color: rgb(96, 105, 113);
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 50px;
 }
 
 section.MY.GAMES-LIBRARY {
   width: auto;
-  margin: 10px;
-  padding: 10px;
-  font-size: 15px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 50px;
 }
 
 section.MY.FAVOURITES {
-  margin: 10px;
-  padding: 10px;
-  font-size: 15px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 50px;
 }
 
 /*responsivt design*/
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: grey;
+@media (max-width: 800px) {
+  article {
     width: 100%;
-    text-align: center;
+    padding: 2%;
+    margin: 2%;
+    opacity: 1;
   }
 }
