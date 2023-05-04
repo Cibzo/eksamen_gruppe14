@@ -97,8 +97,6 @@ section.MY.FAVOURITES {
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 5px;
-  margin-bottom: 50px;
 }
 /*responsivt design*/
 
