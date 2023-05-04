@@ -6,7 +6,7 @@ export default function PageContent({pageName}){
         <>
         <main className={pageName}>
             <PageSection
-                sectionName={"GAMESHOP"} 
+                sectionName={Head} 
                 enterBtn={"Visit shop"}
                 games={store}/>
             <PageSection 
