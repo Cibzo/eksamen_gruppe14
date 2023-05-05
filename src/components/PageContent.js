@@ -1,5 +1,5 @@
 import { mygames, store } from "../data/games";
-
+import PageSection from "./PageSection";
 
 export default function PageContent({contPageTag, contPageName, contPageClas, contPageBtnBuy, contPageNav, contPageId}){
     const data = contPageName === "GAMESHOP" ? store : mygames
@@ -7,7 +7,7 @@ export default function PageContent({contPageTag, contPageName, contPageClas, co
     return (
         <>
         <main className={contPageName}>
-        <PageContent
+        <PageSection
                     secTag={contPageTag}
                     libaryName={contPageName}
                     secName={contPageClas} 

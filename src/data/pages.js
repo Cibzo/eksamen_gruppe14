@@ -1,6 +1,6 @@
 export const pages = [
   {
-    id : 1, 
+    id : 16, 
     name: "GAMESHOP",
     clas: "gameshop",
     nav: "Visit shop",
@@ -9,7 +9,7 @@ export const pages = [
     btn_buy: false
   },
   {
-    id : 2,
+    id : 17,
     name: "MY GAMES-LIBRARY",
     clas: "mylib",
     nav: "Go to library",
@@ -18,7 +18,7 @@ export const pages = [
     btn_buy: true
   },
   {
-    id : 3,
+    id : 18,
     name: "MY FAVOURITES",
     clas: "fav",
     nav: "Go to favourites",

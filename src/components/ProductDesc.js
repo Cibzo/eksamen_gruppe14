@@ -1,11 +1,11 @@
 import Image from "./Image";
-import Title from "./Title";
+import Titles from "./Titles";
 
 export default function ProductDesc({pic, name, sjanger}){
     return (
             <>
             <Image bilde={pic}/>
-            <Title tittleTag={"h4"} titleName={name} />
+            <Titles tittleTag={"h4"} titleName={name} />
             <span className={sjanger}>{sjanger}</span>
             </>
         )
