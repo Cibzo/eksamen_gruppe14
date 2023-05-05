@@ -7,3 +7,17 @@ import { store } from "../data/games"
                 if (!randIndex.includes(index)) {
                     randIndex.push(index)}
             }
+
+            /*   (
+                <>
+    
+                <PageContent
+                    libaryName={DashName}
+                    contSec={DashSec} 
+                    contBtn={DashBtn}  
+                    contData={DashData} 
+                    contBol={DashBol}
+                    contTag={DashTag}/>
+                </>        
+        )
+        */

@@ -2,22 +2,28 @@ export const pages = [
   {
     id : 1, 
     name: "GAMESHOP",
-    stil: "gameshop",
-    visit: "Visit shop",
-    item_length: 3,
+    clas: "gameshop",
+    nav: "Visit shop",
+    length: 3,
+    tag: "section",
+    btn_buy: false
   },
   {
     id : 2,
     name: "MY GAMES-LIBRARY",
-    stil: "favelib",
-    visit: "Go to library",
-    item_length: 4,
+    clas: "favelib",
+    nav: "Go to library",
+    length: 4,
+    tag: "section",
+    btn_buy: true
   },
   {
     id : 3,
     name: "MY FAVOURITES",
-    stil: "my_favourites",
-    visit: "Go to favourites",
-    item_length: 2,
+    clas: "my_favourites",
+    nav: "Go to favourites",
+    length: 2,
+    tag: "aside",
+    btn_buy: false
   },
 ];

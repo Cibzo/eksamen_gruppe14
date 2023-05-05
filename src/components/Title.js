@@ -1,3 +1,4 @@
-export default function Title({titleName}){
-    return <h2>{titleName}</h2>
+export default function Title({titleTag, titleName}){
+    const TagName = titleTag
+    return <span>{titleName}</span>
 }

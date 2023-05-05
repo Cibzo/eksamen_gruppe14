@@ -3,22 +3,24 @@ import { randIndex } from "./Functions";
 import ProductCard from "./ProductCard";
 import Title from "./Title";
 
-export default function PageSection({libaryName, enterBtn, games, antall, show}) {
+export default function PageSection({libaryName, secName, secBtn, secData, secTag, secBol}) {
+    const TagName = "section"
     return (
             <>
-            <section className={enterBtn}>
-                <Title text={libaryName}/>
-                <Btn name={enterBtn}/>
+            <TagName className={libaryName}>
+                <Title titleTag={'h1'} titleName={secName}/>
+                <Btn name={secBtn}/>
                 {randIndex.map(randIndex => (
-                <ul key={games[randIndex].id}>
-                    <ProductCard 
-                        title={games[randIndex].title}
-                        generes={games[randIndex].genres}
-                        bilde={games[randIndex].img}/>
-                    <Btn atr={games[randIndex].id} link={games[randIndex].link} name={"Buy"} hide={show} />
-                </ul>)).slice(0, antall)
-                }
-            </section>
+                <article key={secData[randIndex].id}>
+                <ProductCard 
+                    title={secData[randIndex].title}
+                    generes={secData[randIndex].genres}
+                    bilde={secData[randIndex].img}/>
+                <Btn atr={secData[randIndex].id} 
+                    link={secData[randIndex].link} 
+                    name={"Buy"} hide={secBol} />
+                </article>)).slice(0, secBol)}
+            </TagName>
             </>
     )
 }
