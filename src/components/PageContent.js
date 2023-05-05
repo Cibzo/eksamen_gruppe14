@@ -5,19 +5,15 @@ export default function PageContent({contPagetag, contPagename, contPageclas, co
     const data = contPagename === "Gameshop"? store : mygames
     return (
         <>
-        <main className={pageName}>
-            <PageSection
-                sectionName={Head} 
-                enterBtn={"Visit shop"}
-                games={store}/>
-            <PageSection 
-                sectionName={"MY FAVOURITES"} 
-                enterBtn={"Go to favourites"}
-                games={mygames} show={true}/>
-            <PageSection 
-                sectionName={"MY GAMES-LIBARY"} 
-                enterBtn={"Go to library"}  
-                games={mygames} show={true}/>
+        <main className="main">
+        <PageSection
+                    secTag={contPagetag}
+                    libaryName={contPagename}
+                    secName={contPageclas} 
+                    secBtn={contPagebtn}  
+                    secData={data} 
+                    secBol={contPagebtn_buy}/>
+
         </main>
         </>
     )
