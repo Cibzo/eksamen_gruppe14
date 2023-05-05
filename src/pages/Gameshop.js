@@ -1,5 +1,4 @@
 import PageContent from "../components/PageContent";
-import { store } from "../data/games";
 import { pages } from "../data/pages";
 
 export default function GameShop() {
@@ -13,3 +12,4 @@ export default function GameShop() {
         </>
     )
 }
+
