@@ -11,7 +11,7 @@ export const pages = [
   {
     id : 2,
     name: "MY GAMES-LIBRARY",
-    clas: "favelib",
+    clas: "mylib",
     nav: "Go to library",
     length: 4,
     tag: "section",
@@ -20,7 +20,7 @@ export const pages = [
   {
     id : 3,
     name: "MY FAVOURITES",
-    clas: "my_favourites",
+    clas: "fav",
     nav: "Go to favourites",
     length: 2,
     tag: "aside",
