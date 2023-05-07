@@ -1,5 +1,9 @@
-import PageContent from "../components/PageContent";
+//import PageContent from "../components/PageContent";
+import PageSection from "../components/PageSection";
+import { mygames } from "../data/games";
 
 export default function Header({ props }) {
-  return <h1>Favourites</h1>;
+  return (
+    <PageSection sectionName={"MY FAVOURITES"} games={mygames} show={true} />
+  );
 }

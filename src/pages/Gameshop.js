@@ -3,9 +3,8 @@ import Header from "./MyFavourites";
 
 export default function GameShop({ props }) {
   return (
-        <>
-        <h1>Shop</h1>;
-        <Header>hei</Header>
-        </>
-        )
+    <>
+      <h1>Shop</h1>;<Header>hei</Header>
+    </>
+  );
 }
