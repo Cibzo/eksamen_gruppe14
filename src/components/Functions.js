@@ -1,17 +1,14 @@
-import { mygames, store } from "../data/games"
-
-
-export let randIndex = []
-export let sortedIndex = []
-
-
-//const data = store.length && mygames.length
-
-let data = store.length
-
-while (randIndex.length < data) {
-        let index = Math.floor(Math.random()*data)
+export default function RandomSort(input) {
+    let randIndex = []
+    while (randIndex.length < input.length) {
+        let index = Math.floor(Math.random()*input.length)
         if (!randIndex.includes(index)) {
             randIndex.push(index)
         }
     }
+    let randdata = (randIndex.map((randIndex) => (input[randIndex])))
+    
+    return randdata
+
+}
+
