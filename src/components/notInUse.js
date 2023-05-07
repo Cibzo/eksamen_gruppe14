@@ -1,7 +1,7 @@
 /*import Btn from "./Btn";
 import { randIndex } from "./Functions";
 import ProductCard from "./ProductCard";
-import Title from "./Title";
+import Titles from "./Titles";
 export default function PageSection({libaryName, enterBtn, Games, antall, show}) {
     return (
             <>

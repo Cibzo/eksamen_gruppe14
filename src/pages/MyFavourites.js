@@ -2,8 +2,10 @@
 import PageSection from "../components/PageSection";
 import { mygames } from "../data/games";
 
-export default function Header({ props }) {
-  return (
-    <PageSection sectionName={"MY FAVOURITES"} games={mygames} show={true} />
-  );
+export default function MyFavourites() {
+    return<PageContent 
+                TitleTag={"h1"}
+                PageName={"MY FAVOURITES"} 
+                kilde={"MY FAVOURITES"}
+    />
 }

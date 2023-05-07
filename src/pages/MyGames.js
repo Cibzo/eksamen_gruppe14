@@ -1,9 +1,12 @@
-//import PageContent from "../components/PageContent";
-import PageSection from "../components/PageSection";
-import { mygames } from "../data/games";
 
-export default function MyGames({ props }) {
-  return (
-    <PageSection sectionName={"MY GAMES-LIBARY"} games={mygames} show={true} />
-  );
+import PageContent from "../components/PageContent";
+
+
+export default function MyGames() {
+
+    return  <PageContent 
+                TitleTag={"h1"}
+                PageName={"MY GAMES-LIBRARY"} 
+                kilde={"MY GAMES-LIBRARY"}
+                />
 }

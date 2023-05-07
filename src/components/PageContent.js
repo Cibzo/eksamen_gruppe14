@@ -1,22 +1,25 @@
-import { mygames, store } from "../data/games";
+import { pages } from "../data/pages";
 import PageSection from "./PageSection";
+import Titles from "./Titles";
 
-export default function PageContent({pageName}){
+export default function PageContent({PageName, ClasName, TitleTag, kilde}){ 
+    const pageData = kilde === "DashCont" ? pages : pages.filter(filterdPage => filterdPage.name === PageName)
     return (
         <>
-        <main className={pageName}>
-            <PageSection
-                sectionName={"GAMESHOP"} 
-                enterBtn={"Visit shop"}
-                games={store}/>
-            <PageSection 
-                sectionName={"MY FAVOURITES"} 
-                enterBtn={"Go to favourites"}
-                games={mygames} show={true}/>
-            <PageSection 
-                sectionName={"MY GAMES-LIBARY"} 
-                enterBtn={"Go to library"}  
-                games={mygames} show={true}/>
+        
+        <Titles titleName={PageName} titleTag={TitleTag}/>
+        <main className={ClasName}>
+        {pageData.map(section => (
+        <PageSection
+                    key={section.id}
+                    fromPage={kilde}
+                    libaryName={section.name}
+                    secClasName={section.clas}
+                    secNavBtn={section.nav}
+                    secBol={section.hide_buy}
+                    antall={section.ant}
+                    secTag={section.tag}/>))}
+        
         </main>
         </>
     )
