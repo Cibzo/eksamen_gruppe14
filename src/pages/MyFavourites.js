@@ -1,6 +1,4 @@
-//import PageContent from "../components/PageContent";
-import PageSection from "../components/PageSection";
-import { mygames } from "../data/games";
+import PageContent from "../components/PageContent";
 
 export default function MyFavourites() {
     return<PageContent 
