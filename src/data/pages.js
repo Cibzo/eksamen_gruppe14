@@ -1,23 +1,29 @@
 export const pages = [
   {
-    id : 1, 
+    id : 16, 
     name: "GAMESHOP",
-    stil: "gameshop",
-    visit: "Visit shop",
-    item_length: 3,
+    clas: "gameshop",
+    nav: "Visit shop",
+    ant: 3,
+    tag: "section",
+    hide_buy: false
   },
   {
-    id : 2,
+    id : 17,
     name: "MY GAMES-LIBRARY",
-    stil: "favelib",
-    visit: "Go to library",
-    item_length: 4,
+    clas: "mylib",
+    nav: "Go to library",
+    ant: 4,
+    tag: "section",
+    hide_buy: true
   },
   {
-    id : 3,
+    id : 18,
     name: "MY FAVOURITES",
-    stil: "my_favourites",
-    visit: "Go to favourites",
-    item_length: 2,
+    clas: "fav",
+    nav: "Go to favourites",
+    ant: 2,
+    tag: "aside",
+    hide_buy: true
   },
 ];

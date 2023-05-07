@@ -1,3 +1,9 @@
-export default function Header({props}) {
-    return 
+import PageContent from "../components/PageContent";
+
+export default function MyFavourites() {
+    return<PageContent 
+                TitleTag={"h1"}
+                PageName={"MY FAVOURITES"} 
+                kilde={"MY FAVOURITES"}
+    />
 }

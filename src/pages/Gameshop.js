@@ -1,15 +1,10 @@
-import PageSection from "../components/PageSection";
-import { store } from "../data/games";
+import PageContent from "../components/PageContent";
 
-export default function GameShop({ props }) {
-  return (
-    <>
-      <PageSection
-        libaryName={"Gameshop"}
-        sectionName={"GAMESHOP"}
-        enterBtn={"Visit shop"}
-        games={store}
-      />
-    </>
-  );
+export default function GameShop() {
+    return <PageContent 
+                TitleTag={"h1"}
+                PageName={"GAMESHOP"} 
+                kilde={"GAMESHOP"}
+                />
 }
+
