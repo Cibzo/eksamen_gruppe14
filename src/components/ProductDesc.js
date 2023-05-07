@@ -5,7 +5,7 @@ export default function ProductDesc({pic, name, sjanger}){
     return (
             <>
             <Image bilde={pic}/>
-            <Titles tittleTag={"h4"} titleName={name} />
+            <Titles titleTag={"h3"} titleName={name} />
             <span className={sjanger}>{sjanger}</span>
             </>
         )
