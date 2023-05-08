@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { mygames, store } from "../data/games";
 import Btn from "./Btn";
 import RandomSort from "./Functions";
