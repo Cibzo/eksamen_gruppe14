@@ -1,5 +1,9 @@
 //import Page from "./Page"
 import { pages } from "../data/pages";
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 8d830e3 (opprettet en ny branch fra denne "assembly")
 import GameShop from "./GameShop";
 import MyFavLib from "./MyFavorite";
 import MyLib from "./MyLibrary";
