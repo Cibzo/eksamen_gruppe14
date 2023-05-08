@@ -15,8 +15,8 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
     return (
             <>
                 <TagName key={secId} className={secClasName}>
-                <Titles titleTag={"h2"} titleName={libaryName} hide={noDisp} />
-                <Btn name={secNavBtn} hide={noDisp}/>
+                <Titles titleTag={"h2"} titleName={libaryName} hide={noDisp} clastxt={secClasName} />
+                <Btn name={secNavBtn} hide={noDisp} btnclaNm={secClasName} atr={secId} link={secClasName} />
                 <div className={secClasName} >
                 {spill.map(data => (
                 /*----Link------*/
@@ -27,7 +27,7 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
                     bilde={data.img}/>
                 <Btn atr={data.id} 
                     link={data.link} 
-                    name={"Buy"} hide={secBol} />
+                    name={"Buy"} hide={secBol}/>
                 </article>
                 /*----Link------*/
                 )).slice(0, antallSpill)}

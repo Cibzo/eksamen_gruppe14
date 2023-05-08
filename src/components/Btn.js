@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 export default function Btn ({atr, link, name, hide}) {
-    return <button hidden={hide} id={atr} ><a hidden={hide} href={link}>{name}</a></button>
+    return <Link to={link} ><button hidden={hide} id={atr} >{name}</button></Link>
     
 }
 

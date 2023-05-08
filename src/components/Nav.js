@@ -1,9 +1,15 @@
-import { Link } from "react-router-dom";
+import Btn from "./Btn";
 
-export default function Nav() {
+export default function Nav({pges}) {
   return (
     <>
       <nav>
+      {pges.map(pges => (
+            <Btn  name={pges.nav} 
+                  atr={pges.id} 
+                  link={pges.clas}/>))}
+      </nav>
+      {/*<nav>
         <Link to="GameShop">
           <button>Shop</button>
         </Link>
@@ -13,7 +19,10 @@ export default function Nav() {
         <Link to="MyFavourites">
           <button>Favourites</button>
         </Link>
-      </nav>
+      </nav>*/}
     </>
   );
 }
+      
+
+

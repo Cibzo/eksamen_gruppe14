@@ -1,3 +1,56 @@
+import { Route, Routes } from "react-router";
+import Dashboard from "../pages/Dashboard";
+import Gameshop from "../pages/Gameshop";
+import MyGames from "../pages/MyGames";
+import MyFavourites from "../pages/MyFavourites";
+import ExternalLink from "./ExternalLink";
+
+export default function RouterLink() {
+    return (
+      <>
+
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/GameShop" element={<Gameshop />} />
+          <Route path="/MyGames" element={<MyGames />} />
+          <Route path="/MyFavourites" element={<MyFavourites />} />
+          {/*Linje under hentet fra: https://stackoverflow.com/questions/42914666/react-router-external-link <Route path="/ektern lenke" exact> {window.location.replace({Link})} </Route> */}
+          <Route path="/ekstern-lenke" element={<ExternalLink />} />
+        </Routes>
+      </>
+    );
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*import Btn from "./Btn";
 import { randIndex } from "./Functions";
 import ProductCard from "./ProductCard";

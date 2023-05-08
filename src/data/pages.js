@@ -2,8 +2,9 @@ export const pages = [
   {
     id : 16, 
     name: "GAMESHOP",
-    clas: "gameshop",
-    nav: "Visit shop",
+    clas: "GameShop",
+    nav: "Shop",
+    navdash: "Visit shop",
     ant: 3,
     tag: "section",
     hide_buy: false
@@ -11,8 +12,9 @@ export const pages = [
   {
     id : 17,
     name: "MY GAMES-LIBRARY",
-    clas: "mylib",
-    nav: "Go to library",
+    clas: "MyGames",
+    nav: "My Games",
+    navdash: "Go to library",
     ant: 4,
     tag: "section",
     hide_buy: true
@@ -20,8 +22,9 @@ export const pages = [
   {
     id : 18,
     name: "MY FAVOURITES",
-    clas: "fav",
-    nav: "Go to favourites",
+    clas: "MyFavourites",
+    nav: "Favourites",
+    navdash: "Go to favourites",
     ant: 2,
     tag: "aside",
     hide_buy: true
