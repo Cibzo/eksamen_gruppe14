@@ -42,10 +42,10 @@ article.game {
   margin-bottom: 20px;
   text-align: left;
 }
-/*-----ProductCard felles START--------*/
+/*-----ProductCard felles SLUTT--------*/
 /*----------------- FELLES SLUTT------------------------*/
 
-/*-------------CSS Header - nav START------------------ */
+/*-------------CSS Header - Nav START------------------ */
 
 nav {
   background-color: #020202;
@@ -81,7 +81,7 @@ button.nav {
   border-radius: 8px;
 }
 
-/*-------------Header - nav SLUTT------------------ */
+/*-------------Header - Nav SLUTT------------------ */
 /*----------------- Dashboard START------------------*/
 .imgGame {
   display: flex;
@@ -97,7 +97,6 @@ div.section.GameShop {
   text-align: left;
 }
 .BuyBtn {
-  display: none;
 }
 
 /*------mylibrary Dashboard------*/
@@ -114,7 +113,6 @@ div.MyGames {
 }
 
 button.MyGames {
-  float: left;
 }
 
 /*-----myfavourites Dashboard-----*/
@@ -127,12 +125,12 @@ aside {
   margin: 1px;
   justify-content: space-around;
 }
-/*-----------------CSS Dashboard SLUTT------------------*/
+/*----------------- Dashboard SLUTT------------------*/
 
-/*-----------------/*CSS MyGames START-------------------*/
-/*-----------------/*CSS MyGames SLUTT-------------------*/
+/*----------------- MyGames START-------------------*/
+/*-----------------MyGames SLUTT-------------------*/
 
-/*-----------------/*CSS GameShop START-------------------*/
+/*-----------------GameShop START-------------------*/
 
 div.GameShop {
   width: auto;
@@ -154,4 +152,9 @@ div.GameShop {
 /*--------------------CSS MyFavourites SLUTT-----------------------*/
 
 /*--------------------FOOTER START-----------------------*/
+Footer {
+  width: auto;
+  height: 10px;
+  background-color: #020202;
+}
 /*--------------------FOOTER SLUTT-----------------------*/
