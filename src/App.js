@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
 import "./App.css";
 import Header from "./components/Header";
-import shopLogo from "./data/logos/1x/macslogo_black.png"
+import shopLogo from "./data/logos/1x/macslogo_black.png";
 import Dashboard from "./pages/Dashboard";
 import Gameshop from "./pages/Gameshop";
 import MyGames from "./pages/MyGames";

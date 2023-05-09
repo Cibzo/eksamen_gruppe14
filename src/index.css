@@ -65,7 +65,7 @@ section {
   text-align: center;
 }
 
-div.Visit.shop {
+.gameshop {
   width: auto;
   height: auto;
   display: flex;
@@ -77,7 +77,7 @@ div.Visit.shop {
   margin-bottom: 50px;
 }
 
-div.Go.to.library {
+.mylib {
   width: auto;
   height: auto;
   display: flex;
@@ -88,7 +88,7 @@ div.Go.to.library {
   margin-bottom: 50px;
 }
 
-div.Go.to.favourites {
+.fav {
   width: auto;
   height: auto;
   display: flex;
