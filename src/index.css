@@ -1,99 +1,4 @@
-nav {
-  background-color: #020202;
-  width: auto;
-  text-align: center;
-}
-
-header {
-  text-align: center;
-}
-
-main {
-  width: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-/*Knapper*/
-
-button {
-  background-color: #000000; /* Black */
-  border: none;
-  color: white;
-  margin: 5px;
-  padding: 1px 1px;
-  height: 40px;
-  width: 200px;
-  font-size: 15px;
-  border-radius: 8px;
-}
-
-.button.nav {
-  background-color: #000000; /* Black */
-  border: none;
-  color: white;
-  margin: 5px;
-  padding: 5px 20px;
-  text-align: center;
-  font-size: 20px;
-  border-radius: 8px;
-}
-
-/*Spillområde*/
-
-article.game {
-  width: 100%;
-  height: 2%;
-  margin-top: 2%;
-  word-wrap: break-word;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-div.section.gameshop {
-  width: auto;
-  height: auto;
-  text-align: left;
-}
-
-div.gameshop {
-  width: auto;
-  height: auto;
-  display: flex;
-  background-color: rgb(96, 105, 113);
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-div.mylib {
-  width: 50%;
-  height: auto;
-  display: flex;
-  float: left;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-top: 1%;
-  margin-top: 2%;
-}
-
-aside {
-  width: 25%;
-  float: right;
-  display: inline;
-  border-style: solid;
-  border-color: grey 5px;
-}
-
-/*responsivt design*/
+/*-----------------/*CSS RESPONSIVT DESIGN START-------------------*/
 
 @media (max-width: 800px) {
   article.game {
@@ -112,3 +17,141 @@ aside {
     display: inline;
   }
 }
+
+/*----------------- FELLES START ----------------------*/
+/*-----Button felles START--------*/
+button {
+  background-color: #000000; /* Black */
+  border: none;
+  color: white;
+  margin: 5px;
+  padding: 1px 1px;
+  height: 40px;
+  width: 200px;
+  font-size: 15px;
+  border-radius: 8px;
+}
+/*-----Button felles START--------*/
+
+/*-----ProductCard felles START------*/
+article.game {
+  width: 100%;
+  height: 2%;
+  margin-top: 2%;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  text-align: left;
+}
+/*-----ProductCard felles START--------*/
+/*----------------- FELLES SLUTT------------------------*/
+
+/*-------------CSS Header - nav START------------------ */
+
+nav {
+  background-color: #020202;
+  width: auto;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+}
+
+.imgHead {
+  width: 700px;
+  height: 100px;
+}
+
+main {
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+
+button.nav {
+  background-color: #000000; /* Black */
+  border: none;
+  color: white;
+  margin: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+/*-------------Header - nav SLUTT------------------ */
+/*----------------- Dashboard START------------------*/
+.imgGame {
+  display: flex;
+  width: 500px;
+  height: 250px;
+}
+
+/*------GameShop Dashboard--------*/
+
+div.section.GameShop {
+  width: auto;
+  height: auto;
+  text-align: left;
+}
+.BuyBtn {
+  display: none;
+}
+
+/*------mylibrary Dashboard------*/
+
+div.MyGames {
+  width: 60%;
+  height: auto;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 1%;
+  margin-top: 2%;
+}
+
+button.MyGames {
+  float: left;
+}
+
+/*-----myfavourites Dashboard-----*/
+
+aside {
+  width: 23%;
+  float: right;
+  display: inline;
+  padding: 1px;
+  margin: 1px;
+  justify-content: space-around;
+}
+/*-----------------CSS Dashboard SLUTT------------------*/
+
+/*-----------------/*CSS MyGames START-------------------*/
+/*-----------------/*CSS MyGames SLUTT-------------------*/
+
+/*-----------------/*CSS GameShop START-------------------*/
+
+div.GameShop {
+  width: auto;
+  height: auto;
+  display: flex;
+  background-color: rgb(96, 105, 113);
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*-----------------/*CSS GameShop SLUTT---------------------------*/
+
+/*--------------------CSS MyFavourites START----------------------*/
+
+/*--------------------CSS MyFavourites SLUTT-----------------------*/
+
+/*--------------------FOOTER START-----------------------*/
+/*--------------------FOOTER SLUTT-----------------------*/

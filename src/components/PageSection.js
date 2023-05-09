@@ -29,7 +29,7 @@ export default function PageSection({
     <>
       <TagName key={secId} className={secClasName}>
         <Titles titleTag={"h2"} titleName={libaryName} hide={noDisp} />
-        <Btn name={secNavBtn} hide={noDisp} />
+        <Btn name={secNavBtn} hide={noDisp} cls={secClasName} />
         <div className={secClasName}>
           {spill
             .map((data) => (
@@ -44,7 +44,8 @@ export default function PageSection({
                   atr={data.id}
                   link={data.link}
                   name={"Buy"}
-                  hide={secBol}
+                  cls={"BuyBtn"}
+                  //hide={secBol}
                 />
               </article>
               /*----Link------*/
