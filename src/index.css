@@ -82,61 +82,25 @@ a.navLink {
 }
 
 /*-------------Header - Nav SLUTT------------------ */
-/*----------------- Dashboard START------------------*/
+/*----------------- DBDashboard START------------------*/
 .imgGame {
   display: flex;
   width: 30%;
 }
 
-/*------GameShop Dashboard--------*/
+/*------DBGameShop Dashboard--------*/
 
-div.section.GameShop {
+div.section.DBGameShop {
   width: auto;
   height: auto;
   text-align: left;
 }
 
-section.GameShop button.GameShopDown {
+button.DBGameShopDown {
   display: none;
 }
 
-/*------mylibrary Dashboard------*/
-
-section.MyGames {
-  width: 65%;
-  float: left;
-}
-
-section.MyGames button.BuyBtn {
-  display: none;
-}
-
-section.MyGames button.MyGames {
-  display: none;
-}
-
-/*-----myfavourites Dashboard-----*/
-
-aside {
-  width: 30%;
-  height: auto;
-  float: right;
-  display: inline;
-  justify-content: space-around;
-}
-
-aside.MyFavourites button.BuyBtn {
-  display: none;
-}
-
-/*----------------- Dashboard SLUTT------------------*/
-
-/*----------------- MyGames START-------------------*/
-/*-----------------MyGames SLUTT-------------------*/
-
-/*-----------------GameShop START-------------------*/
-
-div.GameShop {
+div.DBGameShop {
   width: auto;
   height: auto;
   display: flex;
@@ -149,11 +113,48 @@ div.GameShop {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/*-----------------/*CSS GameShop SLUTT---------------------------*/
 
-/*--------------------CSS MyFavourites START----------------------*/
+/*------DBMyGames Dashboard------*/
 
-/*--------------------CSS MyFavourites SLUTT-----------------------*/
+section.MGMyGames {
+  width: 65%;
+  float: left;
+}
+
+button.DBBuyBtn {
+  display: none;
+}
+
+button.DBMyGamesUpper {
+  display: none;
+}
+
+/*-----DBMyFavourites Dashboard-----*/
+
+aside {
+  width: 30%;
+  height: auto;
+  float: right;
+  display: inline;
+  justify-content: space-around;
+}
+
+button.DBBuyBtn {
+  display: none;
+}
+
+/*----------------- DBDashboard SLUTT------------------*/
+
+/*----------------- MGMyGames START-------------------*/
+/*-----------------MGMyGames SLUTT-------------------*/
+
+/*-----------------GSGameShop START-------------------*/
+
+/*-----------------/*CSS GSGameShop SLUTT---------------------------*/
+
+/*--------------------CSS MFMyFavourites START----------------------*/
+
+/*--------------------CSS MFMyFavourites SLUTT-----------------------*/
 
 /*--------------------FOOTER START-----------------------*/
 Footer {
