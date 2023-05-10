@@ -85,8 +85,8 @@ button.nav {
 /*----------------- Dashboard START------------------*/
 .imgGame {
   display: flex;
-  width: 500px;
-  height: 250px;
+  width: 300px;
+  height: 150px;
 }
 
 /*------GameShop Dashboard--------*/
@@ -95,8 +95,6 @@ div.section.GameShop {
   width: auto;
   height: auto;
   text-align: left;
-}
-.BuyBtn {
 }
 
 /*------mylibrary Dashboard------*/
@@ -112,8 +110,9 @@ div.MyGames {
   margin-top: 2%;
 }
 
-button.MyGames {
-}
+section.MyGames button.BuyBtn {
+  display: none;
+
 
 /*-----myfavourites Dashboard-----*/
 
@@ -124,6 +123,10 @@ aside {
   padding: 1px;
   margin: 1px;
   justify-content: space-around;
+}
+
+aside.MyFavourites button.BuyBtn {
+  display: none;
 }
 /*----------------- Dashboard SLUTT------------------*/
 

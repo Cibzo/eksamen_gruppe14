@@ -52,6 +52,7 @@ export default function PageSection({
             ))
             .slice(0, antallSpill)}
         </div>
+        <Btn name={secNavBtn} hide={noDisp} cls={secClasName + "Down"} />
       </TagName>
     </>
   );
