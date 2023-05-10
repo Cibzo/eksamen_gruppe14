@@ -20,7 +20,7 @@
 
 /*----------------- FELLES START ----------------------*/
 /*-----Button felles START--------*/
-button {
+nav.PageNav a {
   background-color: #000000; /* Black */
   border: none;
   color: white;
@@ -70,7 +70,7 @@ main {
   padding: 20px;
 }
 
-button.nav {
+a.navLink {
   background-color: #000000; /* Black */
   border: none;
   color: white;
@@ -97,10 +97,14 @@ div.section.GameShop {
   text-align: left;
 }
 
+section.GameShop button.GameShopDown {
+  display: none;
+}
+
 /*------mylibrary Dashboard------*/
 
-div.MyGames {
-  width: 60%;
+section.MyGames {
+  width: 70%;
   height: auto;
   display: flex;
   float: left;
@@ -110,9 +114,17 @@ div.MyGames {
   margin-top: 2%;
 }
 
+div.MyGames {
+  width: 70%;
+}
+
 section.MyGames button.BuyBtn {
   display: none;
+}
 
+section.MyGames button.MyGames {
+  display: none;
+}
 
 /*-----myfavourites Dashboard-----*/
 

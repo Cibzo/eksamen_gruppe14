@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 export default function Nav() {
   return (
     <>
-      <nav>
-        <Link to="GameShop">
-          <button>Shop</button>
+      <nav className="PageNav">
+        <Link to="GameShop" className="navLink">
+          Shop
         </Link>
-        <Link to="MyGames">
-          <button>My Games</button>
+        <Link to="MyGames" className="navLink">
+          My Games
         </Link>
-        <Link to="MyFavourites">
-          <button>Favourites</button>
+        <Link to="MyFavourites" className="navLink">
+          Favourites
         </Link>
       </nav>
     </>
