@@ -1,12 +1,13 @@
 import ProductDesc from "./ProductDesc";
-export default function ProductCard({ id, bilde, title, generes }) {
+export default function ProductCard({ id, bilde, title, generes, cls}) {
   return (
+    
     <ProductDesc
       key={id}
-      className={"game"}
       pic={bilde}
       name={title}
       sjanger={generes.join(", ")}
+      clstit={cls}
     />
   );
 }

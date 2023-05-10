@@ -4,7 +4,7 @@ export default function GameShop() {
     return <PageContent 
                 TitleTag={"h1"}
                 PageName={"GAMESHOP"} 
-                kilde={"GAMESHOP"}
+                kilde={"GS"}
                 />
 }
 
