@@ -8,7 +8,7 @@
     display: inline;
   }
   aside {
-    width: auto;
+    width: 30%;
     height: auto;
     display: flex;
     max-width: 800px;
@@ -58,8 +58,8 @@ header {
 }
 
 .imgHead {
-  width: 700px;
-  height: 100px;
+  width: 500px;
+  height: 70px;
 }
 
 main {
@@ -85,8 +85,7 @@ a.navLink {
 /*----------------- Dashboard START------------------*/
 .imgGame {
   display: flex;
-  width: 300px;
-  height: 150px;
+  width: 30%;
 }
 
 /*------GameShop Dashboard--------*/
@@ -104,18 +103,8 @@ section.GameShop button.GameShopDown {
 /*------mylibrary Dashboard------*/
 
 section.MyGames {
-  width: 70%;
-  height: auto;
-  display: flex;
+  width: 65%;
   float: left;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-top: 1%;
-  margin-top: 2%;
-}
-
-div.MyGames {
-  width: 70%;
 }
 
 section.MyGames button.BuyBtn {
@@ -129,17 +118,17 @@ section.MyGames button.MyGames {
 /*-----myfavourites Dashboard-----*/
 
 aside {
-  width: 23%;
+  width: 30%;
+  height: auto;
   float: right;
   display: inline;
-  padding: 1px;
-  margin: 1px;
   justify-content: space-around;
 }
 
 aside.MyFavourites button.BuyBtn {
   display: none;
 }
+
 /*----------------- Dashboard SLUTT------------------*/
 
 /*----------------- MyGames START-------------------*/
