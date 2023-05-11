@@ -158,12 +158,6 @@ button.DBBuyBtn {
 /*--------------------CSS MFMyFavourites START-----------------------*/
 /*--------------------CSS MFMyFavourites SLUTT-----------------------*/
 
-/*--------------------FOOTER START-----------------------*/
-Footer {
-  height: 20%;
-}
-/*--------------------FOOTER SLUTT-----------------------*/
-
 /*-----------------/*CSS RESPONSIVT DESIGN START-------------------*/
 
 @media (max-width: 800px) {
@@ -183,3 +177,9 @@ Footer {
     display: inline;
   }
 }
+
+/*--------------------FOOTER START-----------------------*/
+Footer {
+  height: 20%;
+}
+/*--------------------FOOTER SLUTT-----------------------*/
