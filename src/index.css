@@ -84,6 +84,7 @@ a.navLink {
 /*-------------Header - Nav SLUTT--------------------- */
 /*----------------- DBDashboard START------------------*/
 img.imgGame {
+  width: auto;
 }
 
 /*-----------DBGameShop Dashboard START-----------------*/
@@ -103,9 +104,6 @@ div.DBGameShop {
   margin-bottom: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-article.DBGameShop {
 }
 
 button.DBGameShopUpper {
