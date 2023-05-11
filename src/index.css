@@ -17,6 +17,7 @@ article {
   margin: 10px;
   display: inline-block;
   background-color: chartreuse;
+  width: auto;
 }
 /*----------------- FELLES SLUTT------------------------*/
 
