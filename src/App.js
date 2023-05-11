@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router";
 //import "./App.css";
-import "./index"
+import "./index.css"
 import Header from "./components/Header";
 import shopLogo from "./data/logos/1x/macslogo_black.png";
 import Dashboard from "./pages/Dashboard";
