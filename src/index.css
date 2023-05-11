@@ -88,7 +88,7 @@ img.imgGame {
   width: 300px;
 }
 
-/*------DBGameShop Dashboard--------*/
+/*-----------DBGameShop Dashboard START-----------------*/
 
 section.DBGameShop {
   width: auto;
@@ -111,8 +111,8 @@ article.DBGameShop {
   float: left;
 }
 
-/*------DBMyGames Dashboard------*/
-
+/*------------DBGameShop Dashboard SLUTT --------------*/
+/*------------DBMyGames Dashboard START  --------------*/
 section.DBMyGames {
   width: 65%;
   height: auto;
@@ -132,8 +132,8 @@ article.DBMyGames {
   margin: 10px;
   display: inline-block;
 }
-
-/*-----DBMyFavourites Dashboard-----*/
+/*------------DBMyGames Dashboard SLUTT --------------*/
+/*----------DBMyFavourites Dashboard START------------*/
 
 aside.DBSMyFavourites {
   width: 23%;
@@ -149,15 +149,13 @@ button.DBBuyBtn {
 
 /*----------------- DBDashboard SLUTT------------------*/
 
+/*-------------------------------------ALLE SIDER---------------------------------------------------*/
+
 /*----------------- MGMyGames START-------------------*/
-/*-----------------MGMyGames SLUTT-------------------*/
-
+/*-----------------MGMyGames SLUTT--------------------*/
 /*-----------------GSGameShop START-------------------*/
-
 /*-----------------/*CSS GSGameShop SLUTT---------------------------*/
-
-/*--------------------CSS MFMyFavourites START----------------------*/
-
+/*--------------------CSS MFMyFavourites START-----------------------*/
 /*--------------------CSS MFMyFavourites SLUTT-----------------------*/
 
 /*--------------------FOOTER START-----------------------*/
