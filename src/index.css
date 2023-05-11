@@ -1,5 +1,5 @@
 /*----------------- FELLES START ----------------------*/
-/*-----Button felles START--------*/
+/*-----Button felles START------------*/
 nav.PageNav a {
   background-color: #000000; /* Black */
   border: none;
@@ -11,9 +11,9 @@ nav.PageNav a {
   font-size: 15px;
   border-radius: 8px;
 }
-/*-----Button felles START--------*/
+/*-----Button felles START-------------*/
 
-/*-----ProductCard felles START------*/
+/*-----ProductCard felles START--------*/
 article.game {
   width: 100%;
   height: 2%;
@@ -22,7 +22,7 @@ article.game {
   margin-bottom: 20px;
   text-align: left;
 }
-/*-----ProductCard felles SLUTT--------*/
+/*-----ProductCard felles SLUTT----------*/
 /*----------------- FELLES SLUTT------------------------*/
 
 /*-------------CSS Header - Nav START------------------ */
@@ -82,7 +82,7 @@ a.navLink {
   border-radius: 8px;
 }
 
-/*-------------Header - Nav SLUTT------------------ */
+/*-------------Header - Nav SLUTT--------------------- */
 /*----------------- DBDashboard START------------------*/
 img.imgGame {
   width: 300px;
@@ -111,6 +111,17 @@ article.DBGameShop {
   float: left;
 }
 
+button.DBGameShopUpper {
+  background-color: #000000; /* Black */
+  border: none;
+  color: white;
+  margin: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
 /*------------DBGameShop Dashboard SLUTT --------------*/
 /*------------DBMyGames Dashboard START  --------------*/
 section.DBMyGames {
@@ -132,6 +143,18 @@ article.DBMyGames {
   margin: 10px;
   display: inline-block;
 }
+
+button.DBMyGamesDown {
+  background-color: #000000; /* Black */
+  border: none;
+  color: white;
+  margin: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
 /*------------DBMyGames Dashboard SLUTT --------------*/
 /*----------DBMyFavourites Dashboard START------------*/
 
@@ -146,7 +169,16 @@ aside.DBSMyFavourites {
 button.DBBuyBtn {
   display: none;
 }
-
+button.DBMyFavouritesDown {
+  background-color: #000000; /* Black */
+  border: none;
+  color: white;
+  margin: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 8px;
+}
 /*----------------- DBDashboard SLUTT------------------*/
 
 /*-------------------------------------ALLE SIDER---------------------------------------------------*/
