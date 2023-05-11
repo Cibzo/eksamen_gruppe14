@@ -1,4 +1,5 @@
 /*----------------- FELLES START ----------------------*/
+
 /*-----Button felles START------------*/
 nav.PageNav a {
   background-color: #000000; /* Black */
@@ -16,7 +17,6 @@ nav.PageNav a {
 article {
   margin: 10px;
   display: inline-block;
-  background-color: chartreuse;
   width: auto;
 }
 /*----------------- FELLES SLUTT------------------------*/
@@ -65,7 +65,6 @@ main {
 
 main.Dash {
   height: auto;
-  background-color: green;
   padding: 2px;
   margin: 2px;
 }
@@ -124,11 +123,8 @@ section.DBMyGames {
   height: auto;
   float: left;
   padding-left: 8px;
-  background-color: darkred;
 }
-div.DBMyGames {
-  background-color: gold;
-}
+
 
 button.DBBuyBtn {
   display: none;
@@ -164,18 +160,16 @@ button.DBMyGamesDown {
 /*----------DBMyFavourites Dashboard START------------*/
 
 aside.DBMyFavourites {
-  width: 23%;
+  max-width: 32%;
   display: inline;
   float: right;
   justify-content: space-around;
-  background-color: blue;
 }
-article.DBMyFavourites {
-  background-color: blueviolet;
-}
+
 div.DBMyFavourites {
-  background-color: chocolate;
+  max-width: 95%;
   width: auto;
+  margin: 1%;
 }
 
 button.DBBuyBtn {
