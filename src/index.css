@@ -13,16 +13,11 @@ nav.PageNav a {
 }
 /*-----Button felles START-------------*/
 
-/*-----ProductCard felles START--------*/
-article.game {
-  width: 100%;
-  height: 2%;
-  margin-top: 2%;
-  word-wrap: break-word;
-  margin-bottom: 20px;
-  text-align: left;
+article {
+  margin: 10px;
+  display: inline-block;
+  background-color: chartreuse;
 }
-/*-----ProductCard felles SLUTT----------*/
 /*----------------- FELLES SLUTT------------------------*/
 
 /*-------------CSS Header - Nav START------------------ */
@@ -68,7 +63,10 @@ main {
 }
 
 main.Dash {
-  height: 60%;
+  height: auto;
+  background-color: green;
+  padding: 2px;
+  margin: 2px;
 }
 
 a.navLink {
@@ -85,7 +83,6 @@ a.navLink {
 /*-------------Header - Nav SLUTT--------------------- */
 /*----------------- DBDashboard START------------------*/
 img.imgGame {
-  width: 300px;
 }
 
 /*-----------DBGameShop Dashboard START-----------------*/
@@ -108,7 +105,6 @@ div.DBGameShop {
 }
 
 article.DBGameShop {
-  float: left;
 }
 
 button.DBGameShopUpper {
@@ -129,19 +125,29 @@ section.DBMyGames {
   height: auto;
   float: left;
   padding-left: 8px;
+  background-color: darkred;
+}
+div.DBMyGames {
+  background-color: gold;
 }
 
 button.DBBuyBtn {
   display: none;
 }
 
-button.DBMyGamesUpper {
-  display: none;
+button.BuyBtnDBGameShop {
+  background-color: #000000; /* Black */
+  border: none;
+  color: white;
+  margin: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 8px;
 }
 
-article.DBMyGames {
-  margin: 10px;
-  display: inline-block;
+button.DBMyGamesUpper {
+  display: none;
 }
 
 button.DBMyGamesDown {
@@ -158,12 +164,19 @@ button.DBMyGamesDown {
 /*------------DBMyGames Dashboard SLUTT --------------*/
 /*----------DBMyFavourites Dashboard START------------*/
 
-aside.DBSMyFavourites {
+aside.DBMyFavourites {
   width: 23%;
-  float: right;
   display: inline;
+  float: right;
   justify-content: space-around;
-  padding-right: 6%;
+  background-color: blue;
+}
+article.DBMyFavourites {
+  background-color: blueviolet;
+}
+div.DBMyFavourites {
+  background-color: chocolate;
+  width: auto;
 }
 
 button.DBBuyBtn {
@@ -200,7 +213,7 @@ button.DBMyFavouritesDown {
     display: inline;
   }
   aside.DBSMyFavourites {
-    width: 30%;
+    width: 23%;
     height: auto;
     display: flex;
     max-width: 800px;
