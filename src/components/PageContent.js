@@ -15,11 +15,10 @@ export default function PageContent({PageName, ClasName, TitleTag, kilde}){
                     fromPage={kilde}
                     libaryName={section.name}
                     secClasName={section.clas}
-                    secNavBtn={section.nav}
+                    secNavBtn={section.navdash}
                     secBol={section.hide_buy}
                     antall={section.ant}
                     secTag={section.tag}/>))}
-        
         </main>
         </>
     )
