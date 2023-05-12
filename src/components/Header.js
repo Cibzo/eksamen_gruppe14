@@ -6,8 +6,8 @@ export default function Header({logo, pgdata}) {
     return ( 
             <>
             <header>
-            <Link to="/" ><Image bilde={logo}/></Link>
-            <Nav pges={pgdata} />
+            <Link id={125} to="/" ><Image bilde={logo}/></Link>
+            <Nav navPges={pgdata}/>
             </header>
             </>
         )

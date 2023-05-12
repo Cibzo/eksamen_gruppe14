@@ -19,7 +19,6 @@ export default function PageContent({PageName, ClasName, TitleTag, kilde}){
                     secBol={section.hide_buy}
                     antall={section.ant}
                     secTag={section.tag}/>))}
-        
         </main>
         </>
     )

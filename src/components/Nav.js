@@ -1,26 +1,16 @@
-import Btn from "./Btn";
+import LinkBtn from "./LinkBtn";
 
-export default function Nav({pges}) {
+export default function Nav({navPges}) {
   return (
-    <>
+    
       <nav>
-      {pges.map(pges => (
-            <Btn  name={pges.nav} 
-                  atr={pges.id} 
-                  link={pges.clas}/>))}
+        {navPges.map(pges => (
+          <LinkBtn  key={pges.id}
+                    atr={pges.id}
+                    name={pges.nav}
+                    link={pges.clas} />))}
+      
       </nav>
-      {/*<nav>
-        <Link to="GameShop">
-          <button>Shop</button>
-        </Link>
-        <Link to="MyGames">
-          <button>My Games</button>
-        </Link>
-        <Link to="MyFavourites">
-          <button>Favourites</button>
-        </Link>
-      </nav>*/}
-    </>
   );
 }
       
