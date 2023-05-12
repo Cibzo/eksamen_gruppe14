@@ -8,7 +8,7 @@ export default function Nav({navPges}) {
           <LinkBtn  key={pges.id}
                     atr={pges.id}
                     name={pges.nav}
-                    link={pges.clas} />))}
+                    lnk={pges.clas} />))}
       
       </nav>
   );
