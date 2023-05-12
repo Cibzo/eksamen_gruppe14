@@ -6,7 +6,7 @@ export default function Nav({navPges}) {
       <nav>
         {navPges.map(pges => (
           <LinkBtn  name={pges.nav}
-                    atr={pges.id}
+                    key={pges.id}
                     link={pges.clas} />))}
       
       </nav>
