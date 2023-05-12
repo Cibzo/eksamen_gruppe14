@@ -4,9 +4,9 @@ import Titles from "./Titles";
 export default function ProductDesc({pic, name, sjanger, clsname}){
     return (
             <>
-            <Image bilde={pic} clastxt={clsname} />
+            <Image bilde={pic} clsTxt={"img_"+clsname} />
             <Titles titleTag={"h3"} titleName={name} />
-            <span className={sjanger}>{sjanger}</span>
+            <span className={"besk_" + clsname}>{sjanger}</span>
             </>
         )
 }

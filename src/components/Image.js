@@ -1,3 +1,3 @@
-export default function Image({id, bilde, clsText}) {
-    return <img id={id} className={clsText} alt={bilde} src={bilde}/>
+export default function Image({id, bilde, clsTxt}) {
+    return <img id={id} className={clsTxt} alt={bilde} src={bilde}/>
 }
