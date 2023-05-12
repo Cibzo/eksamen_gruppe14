@@ -12,3 +12,8 @@ export default function RandomSort(input) {
 
 }
 
+export default function clickHandler () {
+
+    return
+
+}
