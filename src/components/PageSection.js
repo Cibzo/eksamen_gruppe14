@@ -1,6 +1,6 @@
 import { mygames, store } from "../data/games";
-import Btn from "./Btn";
 import RandomSort from "./Functions";
+import LinkBtn from "./LinkBtn";
 import ProductCard from "./ProductCard";
 import Titles from "./Titles";
 
@@ -16,7 +16,7 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
             <>
                 <TagName key={secId} className={secClasName}>
                 <Titles titleTag={"h2"} titleName={libaryName} hide={noDisp} />
-                <Btn name={secNavBtn} hide={noDisp}/>
+                <LinkBtn name={secNavBtn} hide={noDisp} atr={secId} link={secClasName} />
                 <div className={secClasName} >
                 {spill.map(data => (
                 /*----Link------*/
@@ -25,7 +25,7 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
                     title={data.title}
                     generes={data.genres}
                     bilde={data.img}/>
-                <Btn atr={data.id} 
+                <LinkBtn atr={data.id} 
                     link={data.link} 
                     name={"Buy"} hide={secBol} />
                 </article>

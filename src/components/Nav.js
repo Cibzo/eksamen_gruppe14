@@ -1,19 +1,15 @@
-import { Link } from "react-router-dom";
+import LinkBtn from "./LinkBtn";
 
-export default function Nav() {
+export default function Nav({navPges}) {
   return (
-    <>
+    
       <nav>
-        <Link to="GameShop">
-          <button>Shop</button>
-        </Link>
-        <Link to="MyGames">
-          <button>My Games</button>
-        </Link>
-        <Link to="MyFavourites">
-          <button>Favourites</button>
-        </Link>
+        {navPges.map(pges => (
+          <LinkBtn  key={pges.id}
+                    atr={pges.id}
+                    name={pges.nav}
+                    link={pges.clas} />))}
+      
       </nav>
-    </>
   );
 }
