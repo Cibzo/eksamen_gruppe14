@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router";
 import Dashboard from "../pages/Dashboard";
-import Gameshop from "../pages/Gameshop";
+import Gameshop from "../pages/GameShop";
 import MyGames from "../pages/MyGames";
 import MyFavourites from "../pages/MyFavourites";
 import ExternalLink from "./ExternalLink";
