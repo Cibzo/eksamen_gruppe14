@@ -1,3 +1,4 @@
+import { v4 as randId } from "uuid"; //Kilde: https://www.npmjs.com/package/react-uuid
 import { mygames, store } from "../data/games";
 import RandomSort from "./Functions";
 import LinkBtn from "./LinkBtn";
@@ -15,17 +16,19 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
     return (
             <>
                 <TagName key={secId} className={secClasName}>
-                <Titles titleTag={"h2"} titleName={libaryName} hide={noDisp} />
-                <LinkBtn name={secNavBtn} hide={noDisp} atr={secId} link={secClasName} />
-                <div className={secClasName} >
+                <Titles key={randId()} titleTag={"h2"} titleName={libaryName} hide={noDisp} />
+                <LinkBtn key={randId()} name={secNavBtn} hide={noDisp} atr={secId} link={secClasName} />
+                <div key={randId()} className={secClasName} >
                 {spill.map(data => (
                 /*----Link------*/
-                <article key={data.id}>
-                <ProductCard 
+                <article key={data.id} >
+                <ProductCard
                     title={data.title}
                     generes={data.genres}
                     bilde={data.img}/>
-                <LinkBtn atr={data.id} 
+                <LinkBtn
+                    key={randId()} 
+                    atr={data.id} 
                     link={data.link} 
                     name={"Buy"} hide={secBol}/>
                 </article>
