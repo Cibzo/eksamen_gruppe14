@@ -118,13 +118,17 @@ button.DBGameShopUpper {
 
 /*------------DBGameShop Dashboard SLUTT --------------*/
 /*------------DBMyGames Dashboard START  --------------*/
-section.DBMyGames {
-  width: 65%;
+div.DBMyGames {
+  width: 95%;
   height: auto;
   float: left;
   padding-left: 8px;
+  padding: 5px;
 }
 
+section.DBMyGames {
+  max-width: 55%;
+}
 
 button.DBBuyBtn {
   display: none;
@@ -221,3 +225,4 @@ Footer {
   height: 20%;
 }
 /*--------------------FOOTER SLUTT-----------------------*/
+
