@@ -16,7 +16,7 @@ export default function PageContent({PageName, ClasName, TitleTag, kilde}){
                     fromPage={kilde}
                     libaryName={section.name}
                     secClasName={kilde + section.clas}
-                    secNavBtn={section.navdash}
+                    secNavBtn={section.nav}
                     secBol={section.hide_buy}
                     antall={section.ant}
                     secTag={section.tag}/>))}
