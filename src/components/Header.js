@@ -6,7 +6,9 @@ export default function Header({logo, pgdata}) {
     return ( 
             <>
             <header>
-            <Link id={125} to="/" ><Image bilde={logo}/></Link>
+            <Link to="/" >
+                <Image bilde={logo} imgClas={"imgHead"} />
+            </Link>
             <Nav navPges={pgdata}/>
             </header>
             </>

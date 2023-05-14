@@ -6,8 +6,9 @@ export default function Dashboard() {
     return(
         <> 
         <PageContent
-                    kilde={"DashCont"}
+                    kilde={"DB"}
                     TitleTag={"h1"}
+                    ClasName={"Dash"}
                     pageData={pages}/>
         </>
     )
