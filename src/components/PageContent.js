@@ -9,14 +9,14 @@ export default function PageContent({PageName, ClasName, TitleTag, kilde}){
         
         
         <main className={ClasName}>
-        <Titles clsTit={ClasName} titleName={PageName} titleTag={TitleTag}/>
+        <Titles titleName={PageName} titleTag={TitleTag}/>
         {pageData.map(section => (
         <PageSection
                     key={section.id}
                     fromPage={kilde}
                     libaryName={section.name}
-                    secClasName={kilde+section.clas}
-                    secNavBtn={section.nav}
+                    secClasName={kilde + section.clas}
+                    secNavBtn={section.navdash}
                     secBol={section.hide_buy}
                     antall={section.ant}
                     secTag={section.tag}/>))}

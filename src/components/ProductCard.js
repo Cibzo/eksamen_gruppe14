@@ -1,13 +1,16 @@
-import ProductDesc from "./ProductDesc";
-export default function ProductCard({ id, bilde, title, generes, cls}) {
-  return (
-    
-    <ProductDesc
-      key={id}
-      pic={bilde}
-      name={title}
-      sjanger={generes.join(", ")}
-      clstit={cls}
-    />
-  );
+import Image from "./Image";
+import LinkBtn from "./LinkBtn";
+import Titles from "./Titles";
+export default function ProductCard({bilde, titel, generes, clsname, id, lnk, Bol}){
+    return (            
+            <article className={"gameCard" + clsname}>
+            <Image bilde={bilde} Img={"imgGame"} />
+            <Titles titleTag={"h3"} titleName={titel} />
+            <span className={"besk_" + clsname}>{generes}</span>
+            <LinkBtn atr={id} 
+                    lnk={lnk}
+                    linkCls={"BuyBtn" + clsname}
+                    name={"Buy"} hide={Bol} />
+            </article> 
+        )
 }
