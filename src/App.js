@@ -4,7 +4,7 @@ import "./index.css";
 import Header from "./components/Header";
 import shopLogo from "./data/logos/1x/macslogo_black.png";
 import Dashboard from "./pages/Dashboard";
-import Gameshop from "./pages/Gameshop";
+import GameShop from "./pages/GameShop";
 import MyGames from "./pages/MyGames";
 import MyFavourites from "./pages/MyFavourites";
 
@@ -14,7 +14,7 @@ function App() {
       <Header logo={shopLogo} />
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/GameShop" element={<Gameshop />} />
+        <Route path="/GameShop" element={<GameShop />} />
         <Route path="/MyGames" element={<MyGames />} />
         <Route path="/MyFavourites" element={<MyFavourites />} />
       </Routes>
