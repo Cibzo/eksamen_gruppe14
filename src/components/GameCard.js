@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Image from "./Image";
 import LinkBtn from "./LinkBtn";
 import Titles from "./Titles";
-export default function GameCard({bilde, titel, generes, clsname, id, lnk, slug, Bol}){
+export default function GameCard({bilde, titel, generes, clsname, id, lnk, Bol}){
     return (            
             <article className={"gameCard" + clsname}>
             <Image bilde={bilde} Img={"imgGame"} />
