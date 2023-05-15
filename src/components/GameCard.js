@@ -6,7 +6,7 @@ export default function ProductCard({bilde, titel, generes, clsname, id, lnk, Bo
             <article className={"gameCard" + clsname}>
             <Image bilde={bilde} Img={"imgGame"} />
             <Titles titleTag={"h3"} titleName={titel} />
-            <span className={"besk_" + clsname}>{generes}</span>
+            <span className={"besk_" + clsname}>{generes.join(", ")}</span>
             <LinkBtn atr={id} 
                     lnk={lnk}
                     linkCls={"BuyBtn" + clsname}

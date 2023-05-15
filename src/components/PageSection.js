@@ -2,7 +2,7 @@
 import { mygames, store } from "../data/games";
 import RandomSort from "./Functions";
 import LinkBtn from "./LinkBtn";
-import ProductCard from "./ProductCard";
+import GameCard from "./GameCard";
 import Titles from "./Titles";
 
 export default function PageSection({secId, libaryName, secClasName, secNavBtn, secTag, secBol, antall, fromPage, seclink}) {
@@ -21,7 +21,7 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
                 <div className={secClasName} >
                 {spill.map(data => (
                 /*----Link------????*/
-                <ProductCard
+                <GameCard
                     key={data.id}
                     titel={data.title}
                     generes={data.genres}
