@@ -1,7 +1,7 @@
 /*----------------- FELLES START ----------------------*/
 
 /*-----Button felles START------------*/
-nav.PageNav a {
+nav.PageNav button {
   background-color: #000000; /* Black */
   border: none;
   color: white;
@@ -203,7 +203,7 @@ button.DBMyFavouritesDown {
 /*-----------------/*CSS RESPONSIVT DESIGN START-------------------*/
 
 @media (max-width: 800px) {
-  article.DBGMygames {
+  article.DBGMyGames {
     max-width: 750px;
     padding: 2%;
     margin: 2%;
@@ -211,8 +211,9 @@ button.DBMyFavouritesDown {
   }
   aside.DBSMyFavourites {
     width: 23%;
+    max-width: 750px;
     height: auto;
-    display: flex;
+    display: inline;
     max-width: 800px;
     padding: 2%;
     margin: 2%;
