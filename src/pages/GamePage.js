@@ -8,14 +8,14 @@ export default function GamePage() {
     const {gameId} = useParams()
     const games = [...store, ...mygames]
     const game = games.find((prod) => prod.id == gameId)
-    const { titel, id, released, genres, link, img  } = game
+    const { title, id, released, genres, link, img  } = game
     let hidBuyBtn =  gameId > 5 ? true : false
 
     return  (
                 <section>
                     <article className={"gameCard"}>
                     <Image bilde={img} ImgCls={"imgGame"} />
-                    <Titles className={"ImgGameTitl"} titleTag={"h3"} titleName={titel} />
+                    <Titles className={"ImgGameTitl"} titleTag={"h3"} titleName={title} />
                     <p className={"besk"}>Genres: {genres.join(", ")}</p>
                     <time dateTime={released}>Published: {released}</time>
                     <br/>
