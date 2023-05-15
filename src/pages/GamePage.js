@@ -7,7 +7,7 @@ import LinkBtn from "../components/LinkBtn";
 export default function GamePage() {
   const { gameId } = useParams();
   const games = [...store, ...mygames];
-  const game = games.find((prod) => prod.id == gameId);
+  const game = games.find((prod) => prod.id === parseInt(gameId));
   const { title, id, released, genres, link, img } = game;
   let hidBuyBtn = gameId > 5 ? true : false;
 
