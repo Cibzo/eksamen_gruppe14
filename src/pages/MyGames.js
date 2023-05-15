@@ -1,11 +1,7 @@
-
 import PageContent from "../components/PageContent";
 
-
 export default function MyGames() {
-
-    return  <PageContent 
-                TitleTag={"h1"}
-                PageName={"MY GAMES-LIBRARY"} 
-                kilde={"MG"}/>
+  return (
+    <PageContent TitleTag={"h1"} PageName={"MY GAMES-LIBRARY"} kilde={"MG"} />
+  );
 }
