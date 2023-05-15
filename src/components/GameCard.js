@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Image from "./Image";
 import LinkBtn from "./LinkBtn";
 import Titles from "./Titles";
-export default function GameCard({bilde, titel, generes, clsname, id, lnk, Bol}){
+export default function GameCard({bilde, titel, generes, clsname, id, lnk, slug, Bol}){
     return (            
             <article className={"gameCard" + clsname}>
             <Image bilde={bilde} Img={"imgGame"} />
@@ -12,7 +12,7 @@ export default function GameCard({bilde, titel, generes, clsname, id, lnk, Bol})
                     lnk={lnk}
                     cls={"BuyBtn" + clsname}
                     name={"Buy"} hide={Bol} />
-                <Link to={`/${id}`}><button>Read more</button></Link>
+            <Link to={`/${id}`}><button>Read more</button></Link>
             </article> 
         )
 }
