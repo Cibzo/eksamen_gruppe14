@@ -201,12 +201,16 @@ button.DBMyFavouritesDown {
 
 /*-------------------------------------ALLE SIDER---------------------------------------------------*/
 
-/*----------------- MGMyGames START-------------------*/
-/*-----------------MGMyGames SLUTT--------------------*/
-/*-----------------GSGameShop START-------------------*/
-/*-----------------/*CSS GSGameShop SLUTT---------------------------*/
-/*--------------------CSS MFMyFavourites START-----------------------*/
-/*--------------------CSS MFMyFavourites SLUTT-----------------------*/
+button.BuyBtnGSGameShop {
+  background-color: #000000; /* Black */
+  border: none;
+  color: white;
+  margin: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 8px;
+}
 
 /*-----------------/*CSS RESPONSIVT DESIGN START-------------------*/
 
