@@ -203,7 +203,7 @@ button.DBMyFavouritesDown {
 /*-----------------/*CSS RESPONSIVT DESIGN START-------------------*/
 
 @media (max-width: 800px) {
-  article.DBGMygames {
+  article.DBGMyGames {
     max-width: 750px;
     padding: 2%;
     margin: 2%;
