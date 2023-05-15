@@ -216,7 +216,6 @@ button.DBMyFavouritesDown {
     max-width: 800px;
     padding: 2%;
     margin: 2%;
-    display: inline;
   }
 }
 
@@ -225,4 +224,3 @@ Footer {
   height: 20%;
 }
 /*--------------------FOOTER SLUTT-----------------------*/
-
