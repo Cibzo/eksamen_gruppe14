@@ -1,4 +1,4 @@
-export default function Titles({titleName, hide, titleTag, clstxt}){
+export default function Titles({titleName, hide, titleTag}){
     const Tag = titleTag === undefined ? "h1": titleTag
-    return <Tag hidden={hide} className={clstxt} >{titleName}</Tag>      
+    return <Tag hidden={hide}>{titleName}</Tag>      
 }

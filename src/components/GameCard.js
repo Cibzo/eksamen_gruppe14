@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Image from "./Image";
 import LinkBtn from "./LinkBtn";
 import Titles from "./Titles";

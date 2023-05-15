@@ -6,7 +6,9 @@ export default function PageContent({PageName, ClasName, TitleTag, kilde}){
     const pageData = kilde === "DB" ? pages : pages.filter(filterdPage => filterdPage.name === PageName)
     return (
         <>
-        <main className={ClasName}>
+        
+        
+        
         <Titles titleName={PageName} titleTag={TitleTag}/>
         {pageData.map(section => (
         <PageSection
@@ -19,7 +21,7 @@ export default function PageContent({PageName, ClasName, TitleTag, kilde}){
                     secBol={section.hide_buy}
                     antall={section.ant}
                     secTag={section.tag}/>))}
-        </main>
+       
         </>
     )
 }
