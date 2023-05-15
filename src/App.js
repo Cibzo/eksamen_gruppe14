@@ -25,3 +25,5 @@ function App() {
 }
 
 export default App;
+
+//kilder react router dom: https://reactrouter.com/en/main/components/outlet
