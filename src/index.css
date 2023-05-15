@@ -12,6 +12,20 @@ nav.PageNav button {
   font-size: 15px;
   border-radius: 8px;
 }
+
+button.ReadMore {
+  background-color: #000000; /* Black */
+  border: none;
+  color: white;
+  height: 40px;
+  width: 150px;
+  float: right;
+  margin: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 8px;
+}
 /*-----Button felles START-------------*/
 
 article {
@@ -109,6 +123,8 @@ button.DBGameShopUpper {
   background-color: #000000; /* Black */
   border: none;
   color: white;
+  width: 150px;
+  height: 40px;
   margin: 5px;
   padding: 5px 20px;
   text-align: center;
@@ -124,6 +140,7 @@ div.DBMyGames {
   float: left;
   padding-left: 8px;
   padding: 5px;
+  border-style: outset;
 }
 
 section.DBMyGames {
@@ -142,11 +159,14 @@ button.BuyBtnDBGameShop {
   background-color: #000000; /* Black */
   border: none;
   color: white;
+  width: 150px;
+  height: 40px;
   margin: 5px;
   padding: 5px 20px;
   text-align: center;
   font-size: 15px;
   border-radius: 8px;
+  float: left;
 }
 
 button.DBMyGamesUpper {
@@ -157,6 +177,8 @@ button.DBMyGamesDown {
   background-color: #000000; /* Black */
   border: none;
   color: white;
+  width: 150px;
+  height: 40px;
   margin: 5px;
   padding: 5px 20px;
   text-align: center;
@@ -181,6 +203,7 @@ div.DBMyFavourites {
   max-width: 95%;
   width: auto;
   margin: 1%;
+  border-style: outset;
 }
 
 button.DBBuyBtn {
@@ -190,6 +213,8 @@ button.DBMyFavouritesDown {
   background-color: #000000; /* Black */
   border: none;
   color: white;
+  width: 150px;
+  height: 40px;
   margin: 5px;
   padding: 5px 20px;
   text-align: center;
@@ -211,6 +236,37 @@ button.BuyBtnGSGameShop {
   font-size: 15px;
   border-radius: 8px;
 }
+/*-----------------/*CSS SINGLE PAGE START-------------------*/
+article.gameCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+img.imgGame {
+  width: 380px;
+  padding: 0.5%;
+  margin: 0.5%;
+  display: block;
+}
+
+button.ButtonSinglePage {
+  float: left;
+  background-color: #000000; /* Black */
+  border: none;
+  color: white;
+  margin-top: 50px;
+  padding: 5px 30px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 8px;
+}
+section.singlePage {
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/*-----------------/*CSS SINGLE PAGE SLUTT-------------------*/
 
 /*-----------------/*CSS RESPONSIVT DESIGN START-------------------*/
 
@@ -227,6 +283,19 @@ button.BuyBtnGSGameShop {
     margin: 2%;
     display: inline;
   }
+  div.divSinglePage {
+    max-width: 750px;
+    padding: 2%;
+    margin: 2%;
+    display: inline;
+  }
+  section.singlePage {
+    max-width: 750px;
+    padding: 2%;
+    margin: 2%;
+    display: inline;
+    text-align: left;
+  }
 }
 
 /*--------------------FOOTER START-----------------------*/
@@ -234,3 +303,9 @@ Footer {
   height: 20%;
 }
 /*--------------------FOOTER SLUTT-----------------------*/
+
+/*KILDER CSS Dokument:
+@ media kilde: https://www.w3schools.com/Css/css3_mediaqueries_ex.asp
+Flexbox: https://www.w3schools.com/Css/css3_flexbox.asp
+Layout: https://www.w3schools.com/css/css_website_layout.asp 
+*/

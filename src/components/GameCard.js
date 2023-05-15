@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Image from "./Image";
 import LinkBtn from "./LinkBtn";
 import Titles from "./Titles";
@@ -8,6 +9,7 @@ export default function GameCard({
   clsname,
   id,
   lnk,
+  slug,
   Bol,
 }) {
   return (
@@ -22,6 +24,9 @@ export default function GameCard({
         name={"Buy"}
         hide={Bol}
       />
+      <Link to={`/${id}`}>
+        <button className="ReadMore">Read more</button>
+      </Link>
     </article>
   );
 }
