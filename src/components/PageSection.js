@@ -1,8 +1,10 @@
+import { v4 as randId } from "uuid"; //Kilde: https://www.npmjs.com/package/react-uuid
 import { mygames, store } from "../data/games";
 import RandomSort from "./Functions";
 import LinkBtn from "./LinkBtn";
-import ProductCard from "./ProductCard";
+import GameCard from "./GameCard";
 import Titles from "./Titles";
+import { Link } from "react-router-dom";
 
 export default function PageSection({secId, libaryName, secClasName, secNavBtn, secTag, secBol, antall, fromPage}) {
     let data = libaryName === "GAMESHOP" ? store : mygames
@@ -18,9 +20,9 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
                 <Titles clsTit={secClasName} titleTag={"h2"} titleName={libaryName} hide={noDisp} />
                 <LinkBtn name={secNavBtn} hide={noDisp} atr={secId} cls={secClasName + "Upper" } />
                 <div className={secClasName} >
-                {spill.map(data => (
+                {spill.map(data => 
                 /*----Link------????*/
-                <ProductCard
+                (<GameCard
                     key={data.id}
                     titel={data.title}
                     generes={data.genres}
@@ -28,9 +30,8 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
                     id={data.id} 
                     lnk={data.link} 
                     Bol={secBol}
-                    clsname={secClasName} />
-                    /*----Link------????*/
-                )).slice(0, antallSpill)}
+                    clsname={secClasName} />)
+                ).slice(0, antallSpill)}
                 </div>
                 <LinkBtn name={secNavBtn} hide={noDisp} atr={secId} cls={secClasName + "Down" } />
                 </TagName>
