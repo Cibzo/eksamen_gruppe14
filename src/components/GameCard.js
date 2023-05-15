@@ -1,7 +1,7 @@
 import Image from "./Image";
 import LinkBtn from "./LinkBtn";
 import Titles from "./Titles";
-export default function ProductCard({bilde, titel, generes, clsname, id, lnk, Bol}){
+export default function GameCard({bilde, titel, generes, clsname, id, lnk, Bol}){
     return (            
             <article className={"gameCard" + clsname}>
             <Image bilde={bilde} Img={"imgGame"} />
@@ -9,7 +9,7 @@ export default function ProductCard({bilde, titel, generes, clsname, id, lnk, Bo
             <span className={"besk_" + clsname}>{generes.join(", ")}</span>
             <LinkBtn atr={id} 
                     lnk={lnk}
-                    linkCls={"BuyBtn" + clsname}
+                    cls={"BuyBtn" + clsname}
                     name={"Buy"} hide={Bol} />
             </article> 
         )

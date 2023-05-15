@@ -30,7 +30,7 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
                     lnk={data.link} 
                     Bol={secBol}
                     clsname={secClasName} />
-                    /*----Link------????*/
+                /*----Link------????*/
                 )).slice(0, antallSpill)}
                 </div>
                 <LinkBtn lnk={seclink} name={secNavBtn} hide={noDisp} atr={secId} cls={secClasName + "Down" } />
