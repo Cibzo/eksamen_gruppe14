@@ -1,12 +1,10 @@
-import { v4 as randId } from "uuid"; //Kilde: https://www.npmjs.com/package/react-uuid
 import { mygames, store } from "../data/games";
 import RandomSort from "./Functions";
 import LinkBtn from "./LinkBtn";
 import GameCard from "./GameCard";
 import Titles from "./Titles";
-import { Link } from "react-router-dom";
 
-export default function PageSection({secId, libaryName, secClasName, secNavBtn, secTag, secBol, antall, fromPage}) {
+export default function PageSection({secId, libaryName, secClasName, secNavBtn, secTag, secBol, antall, fromPage, seclink}) {
     let data = libaryName === "GAMESHOP" ? store : mygames
     data = libaryName === "MY FAVOURITES" ?  mygames.filter(Game => Game.fav === true) : data
     const TagName = fromPage === "DB" ?  secTag : "section"
@@ -18,11 +16,11 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
             <>
                 <TagName key={secId} className={secClasName}>
                 <Titles clsTit={secClasName} titleTag={"h2"} titleName={libaryName} hide={noDisp} />
-                <LinkBtn name={secNavBtn} hide={noDisp} atr={secId} cls={secClasName + "Upper" } />
+                <LinkBtn lnk={seclink} name={secNavBtn} hide={noDisp} atr={secId} cls={secClasName + "Upper" }  />
                 <div className={secClasName} >
                 {spill.map(data => 
                 /*----Link------????*/
-                (<GameCard
+                <GameCard
                     key={data.id}
                     titel={data.title}
                     generes={data.genres}
@@ -30,10 +28,11 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
                     id={data.id} 
                     lnk={data.link} 
                     Bol={secBol}
-                    clsname={secClasName} />)
+                    clsname={secClasName} />
+                    /*----Link------????*/
                 ).slice(0, antallSpill)}
                 </div>
-                <LinkBtn name={secNavBtn} hide={noDisp} atr={secId} cls={secClasName + "Down" } />
+                <LinkBtn lnk={seclink} name={secNavBtn} hide={noDisp} atr={secId} cls={secClasName + "Down" } />
                 </TagName>
             </>
     )

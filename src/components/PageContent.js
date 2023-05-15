@@ -17,6 +17,7 @@ export default function PageContent({PageName, ClasName, TitleTag, kilde}){
                     libaryName={section.name}
                     secClasName={kilde + section.clas}
                     secNavBtn={section.navdash}
+                    seclink={section.clas}
                     secBol={section.hide_buy}
                     antall={section.ant}
                     secTag={section.tag}/>))}
