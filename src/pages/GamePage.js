@@ -7,6 +7,9 @@ import LinkBtn from "../components/LinkBtn";
 export default function GamePage() {
   const { gameId } = useParams();
   const games = [...store, ...mygames];
+  /*Siden parametern med ID for spille kommer inn som string,
+  kunne ha brukt "==", men da kommer det en WARNING, 
+  derfor brukte jeg parsInt() for å få kunne bruke "==="*/
   const game = games.find((prod) => prod.id === parseInt(gameId));
   const { title, id, released, genres, link, img } = game;
   let hidBuyBtn = gameId > 5 ? true : false;

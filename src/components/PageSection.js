@@ -18,20 +18,20 @@ export default function PageSection({secId, libaryName, secClasName, secNavBtn, 
                 <Titles clsTit={secClasName} titleTag={"h2"} titleName={libaryName} hide={noDisp} />
                 <LinkBtn lnk={seclink} name={secNavBtn} hide={noDisp} atr={secId} cls={secClasName + "Upper" }  />
                 <div className={secClasName} >
-                {spill.map(data => 
-                /*----Link------????*/
-                <GameCard
-                    key={data.id}
-                    titel={data.title}
-                    generes={data.genres}
-                    bilde={data.img}
-                    id={data.id} 
-                    lnk={data.link} 
-                    Bol={secBol}
-                    clsname={secClasName}
-                    slug={data.slug} />
+                    {spill.map(data => 
                     /*----Link------????*/
-                ).slice(0, antallSpill)}
+                    <GameCard
+                        key={data.id}
+                        titel={data.title}
+                        generes={data.genres}
+                        bilde={data.img}
+                        id={data.id} 
+                        lnk={data.link} 
+                        Bol={secBol}
+                        clsname={secClasName}
+                        slug={data.slug} />
+                        /*----Link------????*/
+                    ).slice(0, antallSpill)}
                 </div>
                 <LinkBtn lnk={seclink} name={secNavBtn} hide={noDisp} atr={secId} cls={secClasName + "Down" } />
                 </TagName>

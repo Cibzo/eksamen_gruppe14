@@ -1,4 +1,3 @@
-import "./App.css";
 import "./index.css";
 import Dashboard from "./pages/Dashboard";
 import GameShop from "./pages/GameShop";

@@ -6,10 +6,10 @@ export default function Header({logo, pgdata}) {
     return ( 
             <>
             <header>
-            <Link to="/" >
-                <Image bilde={logo} imgClas={"imgHead"} />
-            </Link>
-            <Nav navPges={pgdata}/>
+                <Link to="/" >
+                    <Image bilde={logo} imgClas={"imgHead"} />
+                </Link>
+                <Nav navPges={pgdata}/>
             </header>
             </>
         )
