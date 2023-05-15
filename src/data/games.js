@@ -6,7 +6,8 @@ export const store = [
       genres: ["Action", "RPG"],
       link: "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1668125812",
- 
+      slug: "Counter-Strike:_Global_Offensive"
+
     },
     {
       title: "STAR WARS Jedi: Survivor™",
@@ -15,7 +16,8 @@ export const store = [
       genres: ["Action", "Adventure"],
       link: "https://store.steampowered.com/app/1774580/STAR_WARS_Jedi_Survivor/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/1774580/header.jpg?t=1681406818",
-    
+      slug: "STAR WARS_Jedi:_Survivor™"
+
     },
     {
       title: "Cyberpunk 2077",
@@ -25,6 +27,7 @@ export const store = [
       link: "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg?t=1680026109",
     
+
     },
     {
       title: "Hogwarts Legacy",
@@ -34,6 +37,7 @@ export const store = [
       link: "https://store.steampowered.com/app/990080/Hogwarts_Legacy/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/990080/header.jpg?t=1680647016",
  
+
     },
     {
       title: "STAR WARS™: The Old Republic™",
@@ -43,6 +47,7 @@ export const store = [
       link: "https://store.steampowered.com/app/1286830/STAR_WARS_The_Old_Republic/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/1286830/header.jpg?t=1680085446",
     }
+
   ]
 
   export const mygames = [
@@ -53,6 +58,7 @@ export const store = [
       genres: ["Action", "RPG"],
       link: "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg?t=1678296348",
+      
       fav: true
     },
     {
@@ -62,6 +68,7 @@ export const store = [
       genres: ["FPS", "MMORPG"],
       link: "https://store.steampowered.com/app/1085660/Destiny_2/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/1085660/header_alt_assets_1.jpg?t=1680800510",
+      
       fav: false
     },
     {
@@ -71,6 +78,7 @@ export const store = [
       genres: ["Sport", "Fotball"],
       link: "https://store.steampowered.com/app/1811260/EA_SPORTS_FIFA_23/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/1811260/header.jpg?t=1679504733",
+      
       fav: false
     },
     {
@@ -80,6 +88,7 @@ export const store = [
       genres: ["RPG", "Action", "Fantasy"],
       link: "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg?t=1671485009",
+      
       fav: true
     },
     {
@@ -89,6 +98,7 @@ export const store = [
       genres: ["Horror", "RPG"],
       link: "https://store.steampowered.com/app/251570/7_Days_to_Die/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/251570/header.jpg?t=1650477344",
+      
       fav: false
     },
     {
@@ -98,6 +108,7 @@ export const store = [
       genres: ["Simulation", "Adventure"],
       link: "https://store.steampowered.com/app/1222670/The_Sims_4/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/1222670/header.jpg?t=1679000582",
+      
       fav: true
     },
     {
@@ -107,6 +118,7 @@ export const store = [
       genres: ["Adventure", "Action", "Fantasy"],
       link: "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg?t=1675178392",
+      
       fav: true
     },
     {
@@ -116,6 +128,7 @@ export const store = [
       genres: ["Adventure", "Action", "Fantasy"],
       link: "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/489830/header.jpg?t=1650909796",
+      
       fav: true
     },
     {
@@ -125,6 +138,7 @@ export const store = [
       genres: ["Action", "PvP"],
       link: "https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/1203220/header.jpg?t=1679589810",
+      
       fav: false
     },
     {
@@ -134,6 +148,7 @@ export const store = [
       genres: ["RPG", "Strategy", "Horror"],
       link: "https://store.steampowered.com/app/2050650/Resident_Evil_4/",
       img: "https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg?t=1680840402",
+      
       fav: true
     }
   ]
