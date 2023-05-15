@@ -12,6 +12,20 @@ nav.PageNav button {
   font-size: 15px;
   border-radius: 8px;
 }
+
+button.ReadMore {
+  background-color: #000000; /* Black */
+  border: none;
+  color: white;
+  height: 40px;
+  width: 150px;
+  float: right;
+  margin: 5px;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 8px;
+}
 /*-----Button felles START-------------*/
 
 article {
@@ -109,6 +123,8 @@ button.DBGameShopUpper {
   background-color: #000000; /* Black */
   border: none;
   color: white;
+  width: 150px;
+  height: 40px;
   margin: 5px;
   padding: 5px 20px;
   text-align: center;
@@ -124,6 +140,7 @@ div.DBMyGames {
   float: left;
   padding-left: 8px;
   padding: 5px;
+  border-style: outset;
 }
 
 section.DBMyGames {
@@ -142,11 +159,14 @@ button.BuyBtnDBGameShop {
   background-color: #000000; /* Black */
   border: none;
   color: white;
+  width: 150px;
+  height: 40px;
   margin: 5px;
   padding: 5px 20px;
   text-align: center;
   font-size: 15px;
   border-radius: 8px;
+  float: left;
 }
 
 button.DBMyGamesUpper {
@@ -157,6 +177,8 @@ button.DBMyGamesDown {
   background-color: #000000; /* Black */
   border: none;
   color: white;
+  width: 150px;
+  height: 40px;
   margin: 5px;
   padding: 5px 20px;
   text-align: center;
@@ -181,6 +203,7 @@ div.DBMyFavourites {
   max-width: 95%;
   width: auto;
   margin: 1%;
+  border-style: outset;
 }
 
 button.DBBuyBtn {
@@ -190,6 +213,8 @@ button.DBMyFavouritesDown {
   background-color: #000000; /* Black */
   border: none;
   color: white;
+  width: 150px;
+  height: 40px;
   margin: 5px;
   padding: 5px 20px;
   text-align: center;
