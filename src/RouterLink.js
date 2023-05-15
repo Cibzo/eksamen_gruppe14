@@ -7,6 +7,7 @@ import Layout from "./components/Layout";
 import GamePage from "./pages/GamePage";
 
 
+
 export default function RouterLink() {
     return (
       <Routes id={150} >
@@ -15,7 +16,7 @@ export default function RouterLink() {
           <Route path="/GameShop" element={<GameShop />} />
           <Route path="/MyGames" element={<MyGames />} />
           <Route path="/MyFavourites" element={<MyFavourites />} />
-          <Route path=":prodId" element={<GamePage />} />
+          <Route path="/:gameId" element={<GamePage />} />
         </Route>
       </Routes>
     );
