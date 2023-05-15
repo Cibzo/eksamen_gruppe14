@@ -128,6 +128,10 @@ div.DBMyGames {
 
 section.DBMyGames {
   max-width: 55%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 button.DBBuyBtn {
@@ -165,9 +169,12 @@ button.DBMyGamesDown {
 
 aside.DBMyFavourites {
   max-width: 32%;
-  display: inline;
   float: right;
-  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right: 40px;
 }
 
 div.DBMyFavourites {
@@ -189,6 +196,7 @@ button.DBMyFavouritesDown {
   font-size: 15px;
   border-radius: 8px;
 }
+
 /*----------------- DBDashboard SLUTT------------------*/
 
 /*-------------------------------------ALLE SIDER---------------------------------------------------*/
@@ -209,14 +217,11 @@ button.DBMyFavouritesDown {
     margin: 2%;
     display: inline;
   }
-  aside.DBSMyFavourites {
-    width: 23%;
+  aside.DBMyFavourites {
     max-width: 750px;
-    height: auto;
-    display: inline;
-    max-width: 800px;
     padding: 2%;
     margin: 2%;
+    display: inline;
   }
 }
 
