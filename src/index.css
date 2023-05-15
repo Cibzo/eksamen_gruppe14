@@ -240,32 +240,31 @@ button.BuyBtnGSGameShop {
 article.gameCard {
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 img.imgGame {
-  width: 360px;
-  padding: 2%;
-  margin: 2%;
+  width: 380px;
+  padding: 0.5%;
+  margin: 0.5%;
   display: block;
 }
 
 button.ButtonSinglePage {
   float: left;
-  margin-top: 90px;
   background-color: #000000; /* Black */
   border: none;
   color: white;
+  margin-top: 50px;
+  padding: 5px 30px;
   text-align: center;
-  width: 100px;
   font-size: 15px;
   border-radius: 8px;
 }
 section.singlePage {
   width: 100%;
   height: auto;
-  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 /*-----------------/*CSS SINGLE PAGE SLUTT-------------------*/
 
