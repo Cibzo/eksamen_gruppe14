@@ -9,7 +9,7 @@ export default function GameShop({randSort, amount, clsn, pgtitle}) {
     <>
     <Titles key={20} title={pagename} tag={"h1"}/>
     <div className={clsn}>
-    <GameCard randSort={randSort} amount={amount} games={store} />
+    <GameCard randSort={randSort} amount={amount} games={store} cls={clsn} />
     </div>
     </>
 )   
