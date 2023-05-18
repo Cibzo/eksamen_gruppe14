@@ -6,11 +6,10 @@ export default function Nav({navPges}) {
       <nav className="PageNav">
         {navPges.map(pges => (
           <LinkBtn  key={pges.id}
-                    atr={pges.id}
-                    name={pges.nav}
-                    lnk={pges.clas} 
-                    linkCls={"navLink"} />))}
-      
+                    lnk={pges.clas}
+                    cls={"navLink"}
+                    name={pges.nav} 
+                     />))}
       </nav>
   );
 }

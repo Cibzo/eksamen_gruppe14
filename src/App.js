@@ -6,6 +6,7 @@ import MyFavourites from "./pages/MyFavourites";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import GamePage from "./pages/GamePage";
+import NotFound from './pages/NotFound';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
           <Route path="/GameShop" element={<GameShop />} />
           <Route path="/MyGames" element={<MyGames />} />
           <Route path="/MyFavourites" element={<MyFavourites />} />
-          <Route path="/:gameId" element={<GamePage />} />
+          <Route path="/GamePage/:gameId" element={<GamePage />} />
+          <Route path='*' element={<NotFound/>} />
         </Route>
       </Routes>
     </>
