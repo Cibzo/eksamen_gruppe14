@@ -3,7 +3,7 @@ import GameCard from './../components/GameCard';
 import { store } from './../data/games';
 
 export default function GameShop({randSort, amount, clsn, pgtitle}) {
-    let pagename = pgtitle === undefined ? "GameShop" : pgtitle  
+    let pagename = pgtitle === undefined ? "GameShop" : pgtitle 
     
     return( 
     <>

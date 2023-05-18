@@ -5,15 +5,15 @@ import { pages } from "../data/pages";
 
 export default function Layout () {
     return (
+        <>
         <div className="container">
             <Header logo={shopLogo} pgdata={pages}/>
             <main>
                 <Outlet/>
             </main>
-            {/*<footer>
-                React eksamen prosjekt i Utvikling av interaktive nettsteder kull 2023 ved Høgskolen i Østfold avd. Halden av Gruppe 14
-                medlemer: Hamsa Casale, Ruben Tuft og Jennie-Lovise Nordheim Bjerke 
-    </footer>*/}
+            <footer> 
+            </footer>
         </div>
+        </>
     )
 }

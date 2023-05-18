@@ -8,7 +8,7 @@ export default function MyGames({randSort, amount, clsn, pgtitle}) {
     <>
     <Titles key={550} title={pagename} tagType={"h1"}/>
     <div className={clsn}>
-    <GameCard randSort={randSort} amount={amount} games={mygames} hide={true} />
+    <GameCard randSort={randSort} amount={amount} games={mygames} hideBuy={true} />
     </div>
     </>
 )

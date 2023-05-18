@@ -8,12 +8,16 @@ export default function GamePage() {
     const game = games.filter(Game => Game.id === parseInt(gameId))
     let hidBuyBtn =  gameId > store.length ? true : false
 
-    return  (
-                <section>
-                    <GameCard games={game} hideBuy={hidBuyBtn} hideTime={false} hidRead={true} />
-                </section>
-        
-            )
+    return(  
+            <div className="gamepage">
+            <GameCard 
+                    games={game} 
+                    hideBuy={hidBuyBtn} 
+                    hideTime={false} 
+                    hidRead={true} 
+                    cls={"GamePage"} />
+            </div>
+    ) 
 
                             
     
