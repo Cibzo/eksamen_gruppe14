@@ -8,10 +8,11 @@ export default function GameCard({games, cls, randSort, hideBuy, amount, hideTim
         let ant = amount === undefined ? games.length : amount
         let hT = hideTime === undefined ? true : hideTime
         let hR = hidRead === undefined ? false : hidRead  
-    return (
-                <div> 
+        let Tagname = randSort === undefined ? "section" : "div"
+        return (
+                <Tagname className={cls} > 
                 {data.map(data =>                
-                <article key={uuidv4()} className={"gameCard"}>
+                <article key={uuidv4()} className={cls}>
                 <img key={uuidv4()} className="imgGame" src={data.img} alt={data.img} />
                 <Titles key={uuidv4()} tag={"h3"} title={data.titel} />
                 <p key={uuidv4()} >{data.generes}</p>
@@ -19,6 +20,6 @@ export default function GameCard({games, cls, randSort, hideBuy, amount, hideTim
                 <LinkBtn key={uuidv4()} lnk={data.lnk} cls={"BuyBtn" + cls} name={"Buy"} hide={hideBuy} />
                 <LinkBtn cls={"readMoreBtn"} key={uuidv4()} lnk={`/GamePage${data.id}`} hide={hR} name={"Read More"}  />
                 </article>).slice(0, ant)}
-                </div>    
+                </Tagname>    
         )
 }

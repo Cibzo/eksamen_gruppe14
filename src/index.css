@@ -1,5 +1,15 @@
 /*----------------- FELLES START ----------------------*/
+article.gameCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+article {
+  margin: 10px;
+  display: inline-block;
+  width: auto;
+}
 /*-----Button felles START------------*/
 nav.PageNav button {
   background-color: #000000; /* Black */
@@ -28,11 +38,7 @@ button.ReadMore {
 }
 /*-----Button felles START-------------*/
 
-article {
-  margin: 10px;
-  display: inline-block;
-  width: auto;
-}
+
 /*----------------- FELLES SLUTT------------------------*/
 
 /*-------------CSS Header - Nav START------------------ */
@@ -69,7 +75,8 @@ main {
   padding: 20px;
 }
 
-div.Dash {
+
+main.Dash {
   height: auto;
   padding: 2px;
   margin: 2px;
@@ -141,7 +148,13 @@ section.DBMyGames {
   margin-bottom: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
+  width: 70%;
+  height: auto;
+  float: left;
+  padding-left: 8px;
 }
+
+
 
 button.DBBuyBtn {
   display: none;
@@ -229,11 +242,7 @@ button.BuyBtnGSGameShop {
   border-radius: 8px;
 }
 /*-----------------/*CSS SINGLE PAGE START-------------------*/
-article.gameCard {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+
 img.imgGame {
   width: 380px;
   padding: 0.5%;
@@ -263,7 +272,7 @@ section.singlePage {
 /*-----------------/*CSS RESPONSIVT DESIGN START-------------------*/
 
 @media (max-width: 800px) {
-  article.DBGMyGames {
+  article.DBMyGames {
     max-width: 750px;
     padding: 2%;
     margin: 2%;
