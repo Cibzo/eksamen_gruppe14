@@ -1,38 +1,52 @@
 /*----------------- FELLES START ----------------------*/
-
-/*-----Button felles START------------*/
-nav.PageNav button {
-  background-color: #000000; /* Black */
-  border: none;
-  color: white;
-  margin: 5px;
-  padding: 1px 1px;
-  height: 40px;
-  width: 200px;
-  font-size: 15px;
-  border-radius: 8px;
+main {
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 10px;
+  padding: 20px;
 }
-
-button.ReadMore {
-  background-color: #000000; /* Black */
-  border: none;
-  color: white;
-  height: 40px;
-  width: 150px;
-  float: right;
-  margin: 5px;
-  padding: 5px 20px;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 8px;
-}
-/*-----Button felles START-------------*/
 
 article {
   margin: 10px;
   display: inline-block;
   width: auto;
 }
+
+/*-----Button felles START------------*/
+button {
+  background-color: #000000; /* Black */
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 8px;
+  margin: 5px;
+  height: 40px;
+}
+
+button.readMore {
+  background-color: transparent;
+  color: #000000;
+  height: 40px;
+  width: 150px;
+  float: right;
+  padding: 5px 20px;
+}
+
+.navLink {
+  padding: 1px 1px;
+  height: 40px;
+  width: 200px;
+}
+
+.BuyBtn {
+  padding: 5px 20px;
+}
+
+/*-----Button felles SLUTT-------------*/
+
+
 /*----------------- FELLES SLUTT------------------------*/
 
 /*-------------CSS Header - Nav START------------------ */
@@ -41,15 +55,6 @@ nav {
   background-color: #020202;
   width: auto;
   text-align: center;
-}
-
-/*Nav tekst eller "knapper" */
-nav.navLink {
-  text-decoration-color: white;
-}
-
-nav.PageNav {
-  background-color: black;
 }
 
 header {
@@ -61,52 +66,30 @@ header {
   height: 70px;
 }
 
-main {
-  width: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin: 10px;
-  padding: 20px;
-}
 
-.DBMyFavouritesUpper,
-.DBMyGamesUpper,
-.DBGameShopDown,
-.DBBuyBtnMyFavourites,
-.DBBuyBtnMyGames .DashTitles {
-  display: none;
-}
+/*-------------Header - Nav SLUTT--------------------- */
+/*----------------- DBDashboard START------------------*/
 
-main.Dash {
-  height: auto;
+div.Dash {
   padding: 2px;
   margin: 2px;
 }
 
-a.navLink {
-  background-color: #000000; /* Black */
-  border: none;
-  color: white;
-  margin: 5px;
+.dashNav {
+  width: 150px;
+  height: 40px;
   padding: 5px 20px;
-  text-align: center;
-  font-size: 20px;
-  border-radius: 8px;
-}
-
-/*-------------Header - Nav SLUTT--------------------- */
-/*----------------- DBDashboard START------------------*/
-img.imgGame {
-  width: auto;
 }
 
 /*-----------DBGameShop Dashboard START-----------------*/
 
-section.DBGameShop {
+.DBGameShop {
   width: auto;
 }
+
+
 div.DBGameShop {
-  width: auto;
+  border-style: outset;
   height: auto;
   display: flex;
   background-color: rgb(96, 105, 113);
@@ -119,18 +102,6 @@ div.DBGameShop {
   padding-bottom: 30px;
 }
 
-button.DBGameShopUpper {
-  background-color: #000000; /* Black */
-  border: none;
-  color: white;
-  width: 150px;
-  height: 40px;
-  margin: 5px;
-  padding: 5px 20px;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 8px;
-}
 
 /*------------DBGameShop Dashboard SLUTT --------------*/
 /*------------DBMyGames Dashboard START  --------------*/
@@ -157,40 +128,6 @@ section.DBMyGames {
 
 
 
-button.DBBuyBtn {
-  display: none;
-}
-
-button.BuyBtnDBGameShop {
-  background-color: #000000; /* Black */
-  border: none;
-  color: white;
-  width: 150px;
-  height: 40px;
-  margin: 5px;
-  padding: 5px 20px;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 8px;
-  float: left;
-}
-
-button.DBMyGamesUpper {
-  display: none;
-}
-
-button.DBMyGamesDown {
-  background-color: #000000; /* Black */
-  border: none;
-  color: white;
-  width: 150px;
-  height: 40px;
-  margin: 5px;
-  padding: 5px 20px;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 8px;
-}
 
 /*------------DBMyGames Dashboard SLUTT --------------*/
 /*----------DBMyFavourites Dashboard START------------*/
@@ -212,67 +149,45 @@ div.DBMyFavourites {
   border-style: outset;
 }
 
-button.DBBuyBtn {
-  display: none;
-}
-button.DBMyFavouritesDown {
-  background-color: #000000; /* Black */
-  border: none;
-  color: white;
-  width: 150px;
-  height: 40px;
-  margin: 5px;
-  padding: 5px 20px;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 8px;
-}
+
+
 
 /*----------------- DBDashboard SLUTT------------------*/
 
 /*-------------------------------------ALLE SIDER---------------------------------------------------*/
 
-button.BuyBtnGSGameShop {
-  background-color: #000000; /* Black */
-  border: none;
-  color: white;
-  margin: 5px;
-  padding: 5px 20px;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 8px;
-}
-/*-----------------/*CSS SINGLE PAGE START-------------------*/
-article.gameCard {
-  width: 100%;
+
+/*-----------------/*CSS GamePage START-------------------*/
+
+article.GamePage {
+  padding-top: 5%;
+  width: auto;
   display: flex;
   justify-content: center;
+  margin: auto;
 }
-img.imgGame {
-  width: 380px;
+
+img.GamePage {
+  max-height: 40vh;
+  width: auto;
   padding: 0.5%;
   margin: 0.5%;
   display: block;
 }
 
-button.ButtonSinglePage {
-  float: left;
-  background-color: #000000; /* Black */
-  border: none;
-  color: white;
-  margin-top: 50px;
+.GPBuyBtn {
+  margin-top: 75px;
   padding: 5px 30px;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 8px;
 }
-section.singlePage {
+
+section.GamePage {
   width: 100%;
   height: auto;
   justify-content: space-around;
   flex-wrap: wrap;
+
 }
-/*-----------------/*CSS SINGLE PAGE SLUTT-------------------*/
+/*-----------------/*CSS GamePage SLUTT-------------------*/
 
 /*-----------------/*CSS RESPONSIVT DESIGN START-------------------*/
 
@@ -289,13 +204,13 @@ section.singlePage {
     margin: 2%;
     display: inline;
   }
-  div.divSinglePage {
+  div.GamePage_Desc {
     max-width: 750px;
     padding: 2%;
     margin: 2%;
     display: inline;
   }
-  section.singlePage {
+  section.GamePage {
     max-width: 750px;
     padding: 2%;
     margin: 2%;
@@ -304,11 +219,6 @@ section.singlePage {
   }
 }
 
-/*--------------------FOOTER START-----------------------*/
-Footer {
-  height: 20%;
-}
-/*--------------------FOOTER SLUTT-----------------------*/
 
 /*KILDER CSS Dokument:
 @ media kilde: https://www.w3schools.com/Css/css3_mediaqueries_ex.asp

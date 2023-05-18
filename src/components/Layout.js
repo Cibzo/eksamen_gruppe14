@@ -5,13 +5,15 @@ import { pages } from "../data/pages";
 
 export default function Layout () {
     return (
+        <>
         <div className="container">
             <Header logo={shopLogo} pgdata={pages}/>
             <main>
                 <Outlet/>
             </main>
-            <footer>
+            <footer> 
             </footer>
         </div>
+        </>
     )
 }

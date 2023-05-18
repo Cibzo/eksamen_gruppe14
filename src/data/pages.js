@@ -5,9 +5,7 @@ export const pages = [
     clas: "GameShop",
     nav: "Shop",
     navdash: "Visit shop",
-    ant: 3,
-    tag: "section",
-    hide_buy: false,
+
   },
   {
     id: 17,
@@ -15,9 +13,7 @@ export const pages = [
     clas: "MyGames",
     nav: "My Games",
     navdash: "Go to library",
-    ant: 4,
-    tag: "section",
-    hide_buy: true,
+
   },
   {
     id: 18,
@@ -25,8 +21,5 @@ export const pages = [
     clas: "MyFavourites",
     nav: "Favourites",
     navdash: "Go to favourites",
-    ant: 2,
-    tag: "aside",
-    hide_buy: true,
-  },
+  }
 ];
