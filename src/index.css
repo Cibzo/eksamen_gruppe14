@@ -69,15 +69,7 @@ main {
   padding: 20px;
 }
 
-.DBMyFavouritesUpper,
-.DBMyGamesUpper,
-.DBGameShopDown,
-.DBBuyBtnMyFavourites,
-.DBBuyBtnMyGames .DashTitles {
-  display: none;
-}
-
-main.Dash {
+div.Dash {
   height: auto;
   padding: 2px;
   margin: 2px;
